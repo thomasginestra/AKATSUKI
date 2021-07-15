@@ -1,0 +1,22 @@
+$title:'Raleway', sans-serif;
+$cursor: pointer;
+$transform: uppercase;
+$colortext:#e7e8e9;
+$sizetitle: 2.5em;
+$sizetext: 2em;
+$titleweight: 400;
+$text: 'Oswald', sans-serif;
+
+$mapa:(
+    "small":300,
+    "regular":400,
+    "medium":500,
+    "bold":700
+);
+
+@mixin display($direction){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
