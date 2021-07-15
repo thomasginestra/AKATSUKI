@@ -7,13 +7,6 @@ $sizetext: 2em;
 $titleweight: 400;
 $text: 'Oswald', sans-serif;
 
-$mapa:(
-    "small":300,
-    "regular":400,
-    "medium":500,
-    "bold":700
-);
-
 @mixin display($direction){
     display: flex;
     flex-direction: $direction;

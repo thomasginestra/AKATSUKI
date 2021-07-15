@@ -3,32 +3,26 @@
 
 /* GENERAL */
 
-@each $k, $v in $mapa{
-    .font-#{$k}{
-        font-weight: $v;
-    }
-}
-
 /* MAIN */
 
-.maininicio{
+.bodyinicio{
     background: rgb(47,27,49);
     background: linear-gradient(0deg, rgba(47,27,49,1) 25%, rgba(134,18,52,1) 50%, rgba(47,27,49,1) 70%); 
 }
-.mainmiembros{
+.bodymiembros{
     background: #201839;
 }
-.mainhistoria{
+.bodyhistoria{
     background: rgb(43,47,56);
     background: linear-gradient(180deg, rgba(43,47,56,1) 35%, rgba(130,131,139,1) 100%);
 }
 
-.maingaleria{
+.bodygaleria{
     background: rgb(255,255,253);
     background: linear-gradient(0deg, rgba(255,255,253,1) 0%, rgba(17,17,16,1) 60%);
 }
 
-.mainunirse{
+.bodyunirse{
     background: rgb(134,0,16);
     background: linear-gradient(0deg, rgba(134,0,16,1) 0%, rgba(0,0,0,1) 40%);
 }
