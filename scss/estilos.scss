@@ -47,7 +47,7 @@ nav{
         }
         .logo__title{
             color: $colortext;
-            font-size: 2.5em;
+            font-size: 2.4em;
             font-weight: $titleweight;
             font-family: 'Ninja Naruto', sans-serif;
             font-style: italic;
@@ -78,12 +78,17 @@ nav{
                 text-decoration: none;
                 letter-spacing: 1px;
                 font-size: 18px;
+                font-weight: 500;
+                margin-left: 30px;
+            }
+            .active{
+                color: rgb(122, 60, 158) !important;
             }
         }
     }
 }
 
-/* INICIO */
+/* INICIO #ff0024;*/
 
 .bannerInicio{
     background: linear-gradient(rgb(0, 0, 0) 7%, rgba(0, 0, 0, 0) 70%), url(../media/banner/bannerInicio.png);

@@ -63,7 +63,7 @@ nav .logo .logo__center {
 
 nav .logo .logo__title {
   color: #e7e8e9;
-  font-size: 2.5em;
+  font-size: 2.4em;
   font-weight: 400;
   font-family: 'Ninja Naruto', sans-serif;
   font-style: italic;
@@ -98,9 +98,15 @@ nav .navlinks .navlinks__list .navlinks__text--button {
   text-decoration: none;
   letter-spacing: 1px;
   font-size: 18px;
+  font-weight: 500;
+  margin-left: 30px;
 }
 
-/* INICIO */
+nav .navlinks .navlinks__list .active {
+  color: #7a3c9e !important;
+}
+
+/* INICIO #ff0024;*/
 .bannerInicio {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(7%, black), color-stop(70%, rgba(0, 0, 0, 0))), url(../media/banner/bannerInicio.png);
   background: linear-gradient(black 7%, rgba(0, 0, 0, 0) 70%), url(../media/banner/bannerInicio.png);
