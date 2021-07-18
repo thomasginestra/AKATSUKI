@@ -7,7 +7,7 @@
 
 .bodyinicio{
     background: rgb(47,27,49);
-    background: linear-gradient(0deg, rgba(47,27,49,1) 25%, rgba(134,18,52,1) 50%, rgba(47,27,49,1) 70%); 
+    background: linear-gradient(0deg, rgba(47,27,49,1) 15%, rgba(134,18,52,1) 50%, rgba(47,27,49,1) 70%); 
 }
 .bodymiembros{
     background: #201839;
@@ -100,9 +100,9 @@ nav{
 
 .titleinicio{
     @include display(column);
-    height: 150px;
+    height: 30vh;
     .titleinicio__text{
-        font-size: 3.3em;
+        font-size: 4em;
         color: #901235;
         font-weight: 500;
         font-family: $text;
@@ -115,11 +115,12 @@ nav{
 .containerinicio{
     display: flex;
     flex-direction: row;
-    margin: 0px 0 200px 0;
+    margin-bottom: 25vh;
+    background-color: #22041d69;
     .containerinicio__video{
         width: 50%;
         @include display(row);
-        margin: 20px;
+        margin: 5vh;
     }
     .containerinicio__text{
         width: 50%;
@@ -140,34 +141,31 @@ nav{
 }
 
 .containerpelea{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 200px;
+    @include display(row);
+    margin-bottom: 25vh;
+    background-color: #22041d69;
     .containerpelea__text{
-        width: 50%;
-        display: flex;
         @include display(column);
-        margin: 50px;
+        width: 50%;
         color: $colortext;
         font-family: $text;
+        margin: 5vh;
         .containerpelea__title{
-            color: #2f1b31;
+            color: #7a1434;
             font-size: $sizetitle;
             padding-bottom: 8px;
         }
         .containerpelea__p{
-            font-size: 1.8em;
+            font-size: $sizetext;
         }
     }
     .containerpelea__boximg{
         width: 50%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        @include display(row);
         .containerpelea__img{
             width: 600px;
             margin: 20px;
-            border: 6px solid #2f1b31;
+            border: 6px solid #71163b36;
             border-radius: 60px;
         }
     }
@@ -175,15 +173,16 @@ nav{
 
 .containerestatua{
     @include display(row);
-    margin: 0 0 200px 0;
+    margin-bottom: 25vh;
+    background-color: #22041d69;
     .containerestatua__text{
         width: 50%;
         @include display(column);
-        margin: 50px;
+        margin: 5vh;
         color: $colortext;
         font-family: $text;
         .containerestatua__title{
-            color: #801233;
+            color: #7a1434;
             font-size: $sizetitle;
             padding-bottom: 8px;
         }
@@ -197,7 +196,7 @@ nav{
         .containerestatua__img{
             width: 600px;
             margin: 20px;
-            border: 6px solid #71163b;
+            border: 6px solid #71163b36;
             border-radius: 60px;
         }
     }
@@ -215,9 +214,9 @@ nav{
 
 .titlemiembros{
     @include display(column);
-    height: 150px;
+    height: 30vh;
     .titlemiembros__text{
-        font-size: 3.3em;
+        font-size: 4em;
         color: #592b6f;
         font-weight: 500;
         font-family: $text;
@@ -283,9 +282,9 @@ nav{
 
 .titleHistoria{
     @include display(column);
-    height: 150px;
+    height: 30vh;
     .titleHistoria__text{
-        font-size: 3.3em;
+        font-size: 4em;
         color: #cd9e4d;
         font-weight: 500;
         font-family: $text;
@@ -337,9 +336,9 @@ nav{
 
 .titlegaleria{
     @include display(column);
-    height: 150px;
+    height: 30vh;
     .titlegaleria__text{
-        font-size: 3.3em;
+        font-size: 4em;
         color: #8d0606;
         font-weight: 500;
         font-family: $text;
@@ -382,9 +381,9 @@ nav{
 
 .titleunirse{
     @include display(column);
-    height: 150px;
+    height: 30vh;
     .titleunirse__text{
-        font-size: 3.3em;
+        font-size: 4em;
         color: #8d0606;
         font-weight: 500;
         font-family: $text;
@@ -513,37 +512,387 @@ footer{
     }
 }
 
-/* MEDIA QUERIES */
+/* MEDIA QUERIE INICIO */
 
-@media all and (max-width: 576px){
-    .navlinks__list{
-        display: block;
-        text-align: center;
+@media (min-width: 576px) and (max-width: 768px){
+    .containerinicio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 25vh;
+        background-color: #22041d69;
+        .containerinicio__video{
+            width: 50%;
+            margin: 20px;
+        }
+        .containerinicio__text{
+            width: auto;
+            padding: 4vh;
+            font-family: $text;
+            color: $colortext;
+            @include display(column);
+            text-align: center;
+            .containerinicio__title{
+                color: #7a1434;
+                font-size: $sizetitle;
+                padding-bottom: 8px;
+            }
+            .containerinicio__p{
+                font-size: $sizetext;
+            }
+        }
     }
-    .logo__title{
-        color: $colortext;
-        font-size: 40px;
-        font-weight: $titleweight;
-        letter-spacing: 2px;
-        text-transform: $transform;
-        font-style: italic;
+    .containerpelea{
+        @include display(column);
+        margin-bottom: 25vh;
+        background-color: #22041d69;
+        .containerpelea__text{
+            width: auto;
+            @include display(column);
+            color: $colortext;
+            font-family: $text;
+            .containerpelea__title{
+                color: #7a1434;
+                font-size: $sizetitle;
+                padding-bottom: 8px;
+            }
+            .containerpelea__p{
+                font-size: $sizetext;
+            }
+        }
+        .containerpelea__boximg{
+            width: 50%;
+            @include display(row);
+            .containerpelea__img{
+                width: 550px;
+                border: 6px solid #71163b36;
+                border-radius: 60px;
+            }
+        }
     }
-    .navlinks__text--button{
-        text-transform: $transform;
-        padding: 0 0px;
+    .containerestatua{
+        @include display(column);
+        margin-bottom: 25vh;
+        background-color: #22041d69;
+        .containerestatua__text{
+            width: auto;
+            @include display(column);
+            margin: 5vh;
+            color: $colortext;
+            font-family: $text;
+            .containerestatua__title{
+                color: #7a1434;
+                font-size: $sizetitle;
+                padding-bottom: 8px;
+            }
+            .containerestatua__p{
+                font-size: $sizetext;
+            }
+        }
+        .containerestatua__boximg{
+            width: 50%;
+            @include display(row);
+            .containerestatua__img{
+                width: 550px;
+                border: 6px solid #71163b36;
+                border-radius: 60px;
+            }
+        }
     }
 }
 
-@media all and (max-width: 1200px){
-    .logo__title{
-        color: $colortext;
-        font-size: 40px;
-        font-weight: $titleweight;
-        letter-spacing: 2px;
-        text-transform: $transform;
-        font-style: italic;
+@media (min-width: 768px) and (max-width: 992px){
+    nav{
+        position: absolute;
+        background: linear-gradient(rgb(0, 0, 0) 10%, rgba(0, 0, 0, 0) 102%), #00000000;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 6px;
+        z-index: 1;
+        .logo{
+            display: flex;
+            align-items: center;
+            .logo__center{
+                max-width: 90px;
+                cursor: $cursor;
+            }
+            .logo__title{
+                display: none;
+                color: $colortext;
+                font-size: 2.4em;
+                font-weight: $titleweight;
+                font-family: 'Ninja Naruto', sans-serif;
+                font-style: italic;
+                letter-spacing: 2px;
+                text-transform: $transform;
+                padding-top: 7px;
+            }
+        }
+        .navlinks{
+            margin-top: 10px;
+            .navlinks__list{
+                display: inline-block;
+                padding: 0px 20px;
+                text-transform: $transform;
+                .navlinks__text{
+                    color: $colortext;
+                    font-size: 18px;
+                    font-family: $title;
+                    text-decoration: none;
+                    letter-spacing: 1px;
+                    transition: color .2s ease ;
+                    &:hover{
+                        color: rgb(122, 60, 158);
+                    }
+                }
+                .navlinks__text--button{
+                    color: #ff0024;
+                    font-family: $title;
+                    text-decoration: none;
+                    letter-spacing: 1px;
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin-left: 0px;
+                }
+                .active{
+                    color: rgb(122, 60, 158) !important;
+                }
+            }
+        }
     }
-    .logo__center{
-        margin-right: 0px;
+    .containerinicio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 25vh;
+        background-color: #22041d69;
+        .containerinicio__video{
+            width: 50%;
+            margin: 20px;
+        }
+        .containerinicio__text{
+            width: auto;
+            padding: 4vh;
+            font-family: $text;
+            color: $colortext;
+            @include display(column);
+            text-align: center;
+            .containerinicio__title{
+                color: #7a1434;
+                font-size: $sizetitle;
+                padding-bottom: 8px;
+            }
+            .containerinicio__p{
+                font-size: $sizetext;
+            }
+        }
+    }
+    .containerpelea{
+        @include display(column);
+        margin-bottom: 25vh;
+        background-color: #22041d69;
+        .containerpelea__text{
+            width: auto;
+            @include display(column);
+            color: $colortext;
+            font-family: $text;
+            .containerpelea__title{
+                color: #7a1434;
+                font-size: $sizetitle;
+                padding-bottom: 8px;
+            }
+            .containerpelea__p{
+                font-size: $sizetext;
+            }
+        }
+        .containerpelea__boximg{
+            width: 50%;
+            @include display(row);
+            .containerpelea__img{
+                width: 600px;
+                border: 6px solid #71163b36;
+                border-radius: 60px;
+            }
+        }
+    }
+    .containerestatua{
+        @include display(column);
+        margin-bottom: 25vh;
+        background-color: #22041d69;
+        .containerestatua__text{
+            width: auto;
+            @include display(column);
+            margin: 5vh;
+            color: $colortext;
+            font-family: $text;
+            .containerestatua__title{
+                color: #7a1434;
+                font-size: $sizetitle;
+                padding-bottom: 8px;
+            }
+            .containerestatua__p{
+                font-size: $sizetext;
+            }
+        }
+        .containerestatua__boximg{
+            width: 50%;
+            @include display(row);
+            .containerestatua__img{
+                width: 600px;
+                border: 6px solid #71163b36;
+                border-radius: 60px;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+    nav{
+        position: absolute;
+        background: linear-gradient(rgb(0, 0, 0) 10%, rgba(0, 0, 0, 0) 102%), #00000000;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 6px;
+        z-index: 1;
+        .logo{
+            display: flex;
+            align-items: center;
+            margin-right: 100px;
+            .logo__center{
+                max-width: 90px;
+                cursor: $cursor;
+            }
+            .logo__title{
+                display: none;
+                color: $colortext;
+                font-size: 2.4em;
+                font-weight: $titleweight;
+                font-family: 'Ninja Naruto', sans-serif;
+                font-style: italic;
+                letter-spacing: 2px;
+                text-transform: $transform;
+                padding-top: 7px;
+            }
+        }
+        .navlinks{
+            margin-top: 10px;
+            .navlinks__list{
+                display: inline-block;
+                padding: 0px 20px;
+                text-transform: $transform;
+                .navlinks__text{
+                    color: $colortext;
+                    font-size: 18px;
+                    font-family: $title;
+                    text-decoration: none;
+                    letter-spacing: 1px;
+                    transition: color .2s ease ;
+                    &:hover{
+                        color: rgb(122, 60, 158);
+                    }
+                }
+                .navlinks__text--button{
+                    color: #ff0024;
+                    font-family: $title;
+                    text-decoration: none;
+                    letter-spacing: 1px;
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin-left: 100px;
+                }
+                .active{
+                    color: rgb(122, 60, 158) !important;
+                }
+            }
+        }
+    }
+    .containerinicio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 25vh;
+        background-color: #22041d69;
+        .containerinicio__video{
+            width: 50%;
+            margin: 20px;
+        }
+        .containerinicio__text{
+            width: auto;
+            padding: 4vh;
+            font-family: $text;
+            color: $colortext;
+            @include display(column);
+            text-align: center;
+            .containerinicio__title{
+                color: #7a1434;
+                font-size: $sizetitle;
+                padding-bottom: 8px;
+            }
+            .containerinicio__p{
+                font-size: $sizetext;
+            }
+        }
+    }
+    .containerpelea{
+        @include display(column);
+        margin-bottom: 25vh;
+        background-color: #22041d69;
+        .containerpelea__text{
+            width: auto;
+            @include display(column);
+            color: $colortext;
+            font-family: $text;
+            .containerpelea__title{
+                color: #7a1434;
+                font-size: $sizetitle;
+                padding-bottom: 8px;
+            }
+            .containerpelea__p{
+                font-size: $sizetext;
+            }
+        }
+        .containerpelea__boximg{
+            width: 50%;
+            @include display(row);
+            .containerpelea__img{
+                width: 600px;
+                border: 6px solid #71163b36;
+                border-radius: 60px;
+            }
+        }
+    }
+    .containerestatua{
+        @include display(column);
+        margin-bottom: 25vh;
+        background-color: #22041d69;
+        .containerestatua__text{
+            width: auto;
+            @include display(column);
+            margin: 5vh;
+            color: $colortext;
+            font-family: $text;
+            .containerestatua__title{
+                color: #7a1434;
+                font-size: $sizetitle;
+                padding-bottom: 8px;
+            }
+            .containerestatua__p{
+                font-size: $sizetext;
+            }
+        }
+        .containerestatua__boximg{
+            width: 50%;
+            @include display(row);
+            .containerestatua__img{
+                width: 600px;
+                border: 6px solid #71163b36;
+                border-radius: 60px;
+            }
+        }
     }
 }
