@@ -295,33 +295,58 @@ nav{
 }
 
 #historia{
-    @include display(row);
-    flex-wrap: wrap;
-    margin: 0px 0 30px 0;
-    .historia__block{
-        @include display(row);
-        .historia__block--title{
-            @include display(row);
-            font-weight: 700;
-            font-size: $sizetitle;
-            color:#994356;;
-            padding: 8px 0 0 0;
-            font-family: $text;
-        }
-        .historia__block--text{
-            @include display(row);
-            font-size: 1.5em;
-            font-family: $text;
+    display: flex;
+    margin-bottom: 30vh;
+    .historia__block--title{
+        display: flex;
+        justify-content: center;
+        color: #743644;
+        font-size: 2em;
+    }
+    .historia__block1{
+        margin: auto;
+        width: 30%;
+        padding: 30px;
+        background: #2c2e34;
+        border-radius: 40px;
+        font-family: $text;
+        .historia__block--text1{
             color: $colortext;
+            font-size: 1.4em;
+        }
+    }
+    .historia__block2{
+        margin: auto;
+        width: 30%;
+        padding: 30px;
+        background: #2c2e34;
+        border-radius: 40px;
+        font-family: $text;
+        .historia__block--text2{
+            color: $colortext;
+            font-size: 1.4em;
+        }
+    }
+    .historia__block3{
+        margin: auto;
+        width: 30%;
+        padding: 30px;
+        background: #2c2e34;
+        border-radius: 40px;
+        font-family: $text;
+        .historia__block--text3{
+            color: $colortext;
+            font-size: 1.4em;
         }
     }
 }
 
 
-#carrousel{
-    background: rgb(43,47,56);
-    margin-bottom: 30px;
-}
+
+
+
+
+
 
 /* GALERIA */
 
@@ -512,9 +537,68 @@ footer{
     }
 }
 
-/* MEDIA QUERIE INICIO */
+/* MEDIA QUERIES */
 
 @media (min-width: 576px) and (max-width: 768px){
+    nav{
+        @include display(column);
+        position: absolute;
+        background: linear-gradient(rgb(0, 0, 0) 10%, rgba(0, 0, 0, 0) 102%), #00000000;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 6px;
+        z-index: 1;
+        .logo{
+            margin: 0px;
+            .logo__center{
+                max-width: 120px;
+                cursor: $cursor;
+            }
+            .logo__title{
+                display: none;
+                color: $colortext;
+                font-size: 2.4em;
+                font-weight: $titleweight;
+                font-family: 'Ninja Naruto', sans-serif;
+                font-style: italic;
+                letter-spacing: 2px;
+                text-transform: $transform;
+                padding-top: 7px;
+            }
+        }
+        .navlinks{
+            padding-left: 0px;
+            padding-top: 20px;
+            @include display(column);
+            .navlinks__list{
+                display: inline-block;
+                text-transform: $transform;
+                .navlinks__text{
+                    color: $colortext;
+                    font-size: 2em;
+                    font-family: $title;
+                    text-decoration: none;
+                    transition: color .2s ease ;
+                    &:hover{
+                        color: rgb(122, 60, 158);
+                    }
+                }
+                .navlinks__text--button{
+                    color: #ff0024;
+                    font-family: $title;
+                    text-decoration: none;
+                    letter-spacing: 1px;
+                    font-size: 2em;
+                    font-weight: 500;
+                    margin: 0px;
+                }
+                .active{
+                    color: rgb(122, 60, 158) !important;
+                }
+            }
+        }
+    }
     .containerinicio{
         display: flex;
         flex-direction: column;

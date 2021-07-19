@@ -497,80 +497,60 @@ nav .navlinks .navlinks__list .active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 0px 0 30px 0;
+  margin-bottom: 30vh;
 }
 
-#historia .historia__block {
+#historia .historia__block--title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  color: #743644;
+  font-size: 2em;
 }
 
-#historia .historia__block .historia__block--title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-weight: 700;
-  font-size: 2.5em;
-  color: #994356;
-  padding: 8px 0 0 0;
+#historia .historia__block1 {
+  margin: auto;
+  width: 30%;
+  padding: 30px;
+  background: #2c2e34;
+  border-radius: 40px;
   font-family: "Oswald", sans-serif;
 }
 
-#historia .historia__block .historia__block--text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 1.5em;
-  font-family: "Oswald", sans-serif;
+#historia .historia__block1 .historia__block--text1 {
   color: #e7e8e9;
+  font-size: 1.4em;
 }
 
-#carrousel {
-  background: #2b2f38;
-  margin-bottom: 30px;
+#historia .historia__block2 {
+  margin: auto;
+  width: 30%;
+  padding: 30px;
+  background: #2c2e34;
+  border-radius: 40px;
+  font-family: "Oswald", sans-serif;
+}
+
+#historia .historia__block2 .historia__block--text2 {
+  color: #e7e8e9;
+  font-size: 1.4em;
+}
+
+#historia .historia__block3 {
+  margin: auto;
+  width: 30%;
+  padding: 30px;
+  background: #2c2e34;
+  border-radius: 40px;
+  font-family: "Oswald", sans-serif;
+}
+
+#historia .historia__block3 .historia__block--text3 {
+  color: #e7e8e9;
+  font-size: 1.4em;
 }
 
 /* GALERIA */
@@ -851,8 +831,93 @@ footer .footercontent .footercontent__socials .footercontent__icons:hover {
   opacity: .4;
 }
 
-/* MEDIA QUERIE INICIO */
+/* MEDIA QUERIES */
 @media (min-width: 576px) and (max-width: 768px) {
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, black), color-stop(102%, rgba(0, 0, 0, 0))), #00000000;
+    background: linear-gradient(black 10%, rgba(0, 0, 0, 0) 102%), #00000000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    z-index: 1;
+  }
+  nav .logo {
+    margin: 0px;
+  }
+  nav .logo .logo__center {
+    max-width: 120px;
+    cursor: pointer;
+  }
+  nav .logo .logo__title {
+    display: none;
+    color: #e7e8e9;
+    font-size: 2.4em;
+    font-weight: 400;
+    font-family: 'Ninja Naruto', sans-serif;
+    font-style: italic;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-top: 7px;
+  }
+  nav .navlinks {
+    padding-left: 0px;
+    padding-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav .navlinks .navlinks__list {
+    display: inline-block;
+    text-transform: uppercase;
+  }
+  nav .navlinks .navlinks__list .navlinks__text {
+    color: #e7e8e9;
+    font-size: 2em;
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    -webkit-transition: color .2s ease;
+    transition: color .2s ease;
+  }
+  nav .navlinks .navlinks__list .navlinks__text:hover {
+    color: #7a3c9e;
+  }
+  nav .navlinks .navlinks__list .navlinks__text--button {
+    color: #ff0024;
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 2em;
+    font-weight: 500;
+    margin: 0px;
+  }
+  nav .navlinks .navlinks__list .active {
+    color: #7a3c9e !important;
+  }
   .containerinicio {
     display: -webkit-box;
     display: -ms-flexbox;
