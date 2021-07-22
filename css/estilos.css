@@ -58,7 +58,7 @@ nav .logo {
 
 nav .logo .logo__center {
   max-width: 90px;
-  cursor: pointer;
+  cursor: default;
 }
 
 nav .logo .logo__title {
@@ -452,7 +452,7 @@ nav .navlinks .navlinks__list .active {
 #miembros .miembros__imgbox .miembros__overlay .miembros__image-title {
   font-size: 2.5em;
   text-transform: uppercase;
-  cursor: pointer;
+  cursor: default;
 }
 
 /* HISTORIA */
@@ -750,7 +750,7 @@ nav .navlinks .navlinks__list .active {
 }
 
 .backgroundunirse #form .form__container .form__block2 .form__block2--textarea:focus {
-  width: 540px;
+  width: 450px;
   height: 200px;
   font-size: 1.5em;
 }
@@ -870,7 +870,7 @@ footer .footercontent .footercontent__socials .footercontent__icons:hover {
   }
   nav .logo .logo__center {
     max-width: 120px;
-    cursor: pointer;
+    cursor: default;
   }
   nav .logo .logo__title {
     display: none;
@@ -1185,7 +1185,7 @@ footer .footercontent .footercontent__socials .footercontent__icons:hover {
   }
   nav .logo .logo__center {
     max-width: 90px;
-    cursor: pointer;
+    cursor: default;
   }
   nav .logo .logo__title {
     display: none;
@@ -1471,7 +1471,7 @@ footer .footercontent .footercontent__socials .footercontent__icons:hover {
   }
   nav .logo .logo__center {
     max-width: 90px;
-    cursor: pointer;
+    cursor: default;
   }
   nav .logo .logo__title {
     display: none;
