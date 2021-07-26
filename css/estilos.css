@@ -106,7 +106,7 @@ nav .navlinks .navlinks__list .active {
   color: #7a3c9e !important;
 }
 
-/* INICIO #ff0024;*/
+/* INICIO */
 .bannerInicio {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(7%, black), color-stop(70%, rgba(0, 0, 0, 0))), url(../media/banner/bannerInicio.png);
   background: linear-gradient(black 7%, rgba(0, 0, 0, 0) 70%), url(../media/banner/bannerInicio.png);
@@ -142,6 +142,17 @@ nav .navlinks .navlinks__list .active {
   letter-spacing: 10px;
   text-transform: uppercase;
   margin-bottom: 0rem !important;
+}
+
+.titleinicio::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#2f1b31), to(transparent));
+  background: linear-gradient(to top, #2f1b31, transparent);
+  z-index: 1000;
 }
 
 .containerinicio {
@@ -387,6 +398,17 @@ nav .navlinks .navlinks__list .active {
   margin-bottom: 0rem !important;
 }
 
+.titlemiembros::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#201839), to(transparent));
+  background: linear-gradient(to top, #201839, transparent);
+  z-index: 1000;
+}
+
 #miembros {
   width: 70%;
   margin: auto;
@@ -491,6 +513,17 @@ nav .navlinks .navlinks__list .active {
   letter-spacing: 10px;
   text-transform: uppercase;
   margin-bottom: 0rem !important;
+}
+
+.titlehistoria::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#2b2f38), to(transparent));
+  background: linear-gradient(to top, #2b2f38, transparent);
+  z-index: 1000;
 }
 
 #historia {
@@ -599,6 +632,17 @@ nav .navlinks .navlinks__list .active {
   letter-spacing: 10px;
   text-transform: uppercase;
   margin-bottom: 0rem !important;
+}
+
+.titlegaleria::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#111110), to(transparent));
+  background: linear-gradient(to top, #111110, transparent);
+  z-index: 1000;
 }
 
 .backgroundGaleria .containergaleria {

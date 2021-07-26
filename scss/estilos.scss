@@ -88,7 +88,7 @@ nav{
     }
 }
 
-/* INICIO #ff0024;*/
+/* INICIO */
 
 .bannerInicio{
     background: linear-gradient(rgb(0, 0, 0) 7%, rgba(0, 0, 0, 0) 70%), url(../media/banner/bannerInicio.png);
@@ -111,6 +111,17 @@ nav{
         margin-bottom: 0rem !important;
     }
 }
+
+.titleinicio::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#2f1b31,transparent);
+    z-index: 1000;
+}
+
 
 .containerinicio{
     display: flex;
@@ -226,6 +237,16 @@ nav{
     }
 }
 
+.titlemiembros::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#201839,transparent);
+    z-index: 1000;
+}
+
 #miembros{
     width: 70%;
 	margin: auto;
@@ -291,6 +312,16 @@ nav{
         text-transform: $transform;
         margin-bottom: 0rem !important;
     }
+}
+
+.titlehistoria::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#2b2f38,transparent);
+    z-index: 1000;
 }
 
 #historia{
@@ -369,6 +400,17 @@ nav{
         margin-bottom: 0rem !important;
     }
 }
+
+.titlegaleria::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#111110,transparent);
+    z-index: 1000;
+}
+
 
 .backgroundGaleria{
     .containergaleria{
@@ -516,7 +558,6 @@ footer{
         }
     }
 }
-
 .footerbutton{
     background: rgba(0, 0, 0, 0.945);
     width: auto;
