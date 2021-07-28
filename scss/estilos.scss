@@ -1,8 +1,6 @@
 @import "fuentes";
 @import "variables";
 
-/* GENERAL */
-
 /* MAIN */
 
 .bodyinicio{
@@ -79,7 +77,7 @@ nav{
                 letter-spacing: 1px;
                 font-size: 18px;
                 font-weight: 500;
-                margin-left: 30px;
+                margin-left: 27px;
             }
             .active{
                 color: rgb(122, 60, 158) !important;
@@ -98,40 +96,19 @@ nav{
     filter: grayscale(20%);
 }
 
-.titleinicio{
-    @include display(column);
-    height: 30vh;
-    .titleinicio__text{
-        font-size: 4em;
-        color: #901235;
-        font-weight: 500;
-        font-family: $text;
-        letter-spacing: 10px;
-        text-transform: $transform;
-        margin-bottom: 0rem !important;
-    }
-}
-
-.titleinicio::before{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(to top,#2f1b31,transparent);
-    z-index: 1000;
-}
-
-
 .containerinicio{
     display: flex;
     flex-direction: row;
-    margin-bottom: 25vh;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
     background-color: #22041d69;
     .containerinicio__video{
         width: 50%;
         @include display(row);
         margin: 5vh;
+        .containerinicio__video-w{
+            width: 100%;
+        }
     }
     .containerinicio__text{
         width: 50%;
@@ -150,10 +127,19 @@ nav{
         }
     }
 }
+.containerinicio::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#2f1b31,transparent);
+    z-index: 1000;
+}
 
 .containerpelea{
     @include display(row);
-    margin-bottom: 25vh;
+    margin-bottom: 20vh;
     background-color: #22041d69;
     .containerpelea__text{
         @include display(column);
@@ -174,7 +160,7 @@ nav{
         width: 50%;
         @include display(row);
         .containerpelea__img{
-            width: 600px;
+            width: 100%;
             margin: 20px;
             border: 6px solid #71163b36;
             border-radius: 60px;
@@ -184,7 +170,7 @@ nav{
 
 .containerestatua{
     @include display(row);
-    margin-bottom: 25vh;
+    margin-bottom: 15vh;
     background-color: #22041d69;
     .containerestatua__text{
         width: 50%;
@@ -205,7 +191,7 @@ nav{
         width: 50%;
         @include display(row);
         .containerestatua__img{
-            width: 600px;
+            width: 80%;
             margin: 20px;
             border: 6px solid #71163b36;
             border-radius: 60px;
@@ -223,111 +209,20 @@ nav{
     filter: grayscale(20%);
 }
 
-.titlemiembros{
-    @include display(column);
-    height: 30vh;
-    .titlemiembros__text{
-        font-size: 4em;
-        color: #592b6f;
-        font-weight: 500;
-        font-family: $text;
-        letter-spacing: 10px;
-        text-transform: $transform;
-        margin-bottom: 0rem !important;
-    }
-}
-
-.titlemiembros::before{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(to top,#201839,transparent);
-    z-index: 1000;
-}
-
-#miembros{
-    width: 70%;
-	margin: auto;
-    padding: 8vh 0;
-	display: flex;
-	flex-wrap: wrap;
-    justify-content: space-around;
-    .miembros__imgbox{
-        position: relative;
-        width: 20%;
-        padding: 5px;
-        box-sizing: border-box;
-        .miembros__img{
-            display: block;
-            border: 3px solid #423e4d;
-        }
-        .miembros__overlay{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0);
-            color: #e6e6e6;
-            @include display(column);
-            opacity: 0;
-            transition: opacity 0.25s;
-            font-family: $text;
-            &:hover{
-                opacity: 1;
-            }
-            .miembros__Blur{
-                backdrop-filter: blur(3px);
-            }
-            .miembros__image-title{
-                font-size: $sizetitle;
-                text-transform: $transform;
-                cursor: $cursor;
-            }
-        }
-    }
-}
-
 /* HISTORIA */
 
 .bannerHistoria{
     background: linear-gradient(rgb(0, 0, 0) 7%, rgba(0, 0, 0, 0) 70%), url(../media/banner/bannerHistoria.png);
-    height: 100%;
+    height: 100vh;
     background-position: bottom;
     background-size: cover;
     filter: grayscale(40%);
 }
 
-.titleHistoria{
-    @include display(column);
-    height: 30vh;
-    .titleHistoria__text{
-        font-size: 4em;
-        color: #cd9e4d;
-        font-weight: 500;
-        font-family: $text;
-        letter-spacing: 10px;
-        text-transform: $transform;
-        margin-bottom: 0rem !important;
-    }
-}
-
-.titlehistoria::before{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(to top,#2b2f38,transparent);
-    z-index: 1000;
-}
-
 #historia{
     display: flex;
-    margin-bottom: 20vh;
-    flex-direction: row;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
     justify-content: space-evenly;
     .historia__block--title{
         display: flex;
@@ -338,6 +233,7 @@ nav{
     .historia__block1{
         width: 30%;
         padding: 30px;
+        margin: 10px;
         background: #2c2e34;
         border-radius: 40px;
         font-family: $text;
@@ -349,6 +245,7 @@ nav{
     .historia__block2{
         width: 30%;
         padding: 30px;
+        margin: 10px;
         background: #2c2e34;
         border-radius: 40px;
         font-family: $text;
@@ -360,6 +257,7 @@ nav{
     .historia__block3{
         width: 30%;
         padding: 30px;
+        margin: 10px;
         background: #2c2e34;
         border-radius: 40px;
         font-family: $text;
@@ -368,6 +266,16 @@ nav{
             font-size: 1.4em;
         }
     }
+}
+
+#historia::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#30343d,transparent);
+    z-index: 1000;
 }
 
 #carrousel{
@@ -387,32 +295,8 @@ nav{
     margin-bottom: 20px;
 }
 
-.titlegaleria{
-    @include display(column);
-    height: 30vh;
-    .titlegaleria__text{
-        font-size: 4em;
-        color: #8d0606;
-        font-weight: 500;
-        font-family: $text;
-        letter-spacing: 10px;
-        text-transform: $transform;
-        margin-bottom: 0rem !important;
-    }
-}
-
-.titlegaleria::before{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(to top,#111110,transparent);
-    z-index: 1000;
-}
-
-
 .backgroundGaleria{
+    margin-top: 10vh;
     .containergaleria{
         width: 90%;
         margin: auto;
@@ -434,6 +318,16 @@ nav{
     }
 }
 
+.backgroundGaleria::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#111110,transparent);
+    z-index: 1000;
+}
+
 /* UNIRSE */
 
 .bannerUnirse{
@@ -441,20 +335,6 @@ nav{
     height: 100vh;
     background-position: bottom;
     background-size: cover;
-}
-
-.titleunirse{
-    @include display(column);
-    height: 30vh;
-    .titleunirse__text{
-        font-size: 4em;
-        color: #8d0606;
-        font-weight: 500;
-        font-family: $text;
-        letter-spacing: 10px;
-        text-transform: $transform;
-        margin-bottom: 0rem !important;
-    }
 }
 
 .backgroundunirse{
@@ -534,14 +414,11 @@ nav{
 /* FOOTER */
 
 footer{
-    background: rgb(255,255,253);
-    background: linear-gradient(180deg, rgba(255, 255, 253, 0) 20%, black 150%);
-    height: 50px;
-    @include display(row);
     .footercontent{
-        padding-top: 30px;
+        background: linear-gradient(180deg, rgba(255, 255, 253, 0) 20%, black 150%);
         .footercontent__socials{
             list-style: none;
+            margin-bottom: 0px;
             @include display(row);
             .footercontent__list{
                 margin: 0px 50px;
@@ -557,20 +434,20 @@ footer{
             }
         }
     }
-}
-.footerbutton{
-    background: rgba(0, 0, 0, 0.945);
-    width: auto;
-    text-align: center;
-    .footerbutton__text{
-        color: $colortext;
-        font-size: 14px;
-        word-spacing: 2px;
-        text-decoration: capitalize;
-        margin-bottom: 0 !important;
-        .footerbutton__text-span{
-            text-transform: $transform;
-            opacity: .4;
+    .footerbutton{
+        background: rgba(0, 0, 0, 0.945);
+        width: auto;
+        text-align: center;
+        .footerbutton__text{
+            color: $colortext;
+            font-size: 14px;
+            word-spacing: 2px;
+            text-decoration: capitalize;
+            margin-bottom: 0 !important;
+            .footerbutton__text-span{
+                text-transform: $transform;
+                opacity: .4;
+            }
         }
     }
 }
@@ -645,8 +522,11 @@ footer{
         margin-bottom: 25vh;
         background-color: #22041d69;
         .containerinicio__video{
-            width: 50%;
+            width: 100%;
             margin: 20px;
+            .containerinicio__video-w{
+                width: 90%;
+            }
         }
         .containerinicio__text{
             width: auto;
@@ -713,10 +593,11 @@ footer{
             }
         }
         .containerestatua__boximg{
-            width: 50%;
+            width: 100%;
             @include display(row);
             .containerestatua__img{
-                width: 550px;
+                width: 100%;
+                margin: 20px;
                 border: 6px solid #71163b36;
                 border-radius: 60px;
             }
@@ -749,15 +630,15 @@ footer{
 
     #historia .historia__block1 {
         width: 90%;
-        margin: 30 auto 10 auto;
+        margin: 15px;
     }
     #historia .historia__block2 {
         width: 90%;
-        margin: 30 auto 10 auto;
+        margin: 15px;
     }
     #historia .historia__block3 {
         width: 90%;
-        margin: 30 auto 10 auto;
+        margin: 15px;
         padding: 40px;
     }
     p {
@@ -826,7 +707,7 @@ footer{
                     letter-spacing: 1px;
                     font-size: 18px;
                     font-weight: 500;
-                    margin-left: 0px;
+                    margin-left: 3px;
                 }
                 .active{
                     color: rgb(122, 60, 158) !important;
@@ -842,8 +723,11 @@ footer{
         margin-bottom: 25vh;
         background-color: #22041d69;
         .containerinicio__video{
-            width: 50%;
+            width: 100%;
             margin: 20px;
+            .containerinicio__video-w{
+                width: 90%;
+            }
         }
         .containerinicio__text{
             width: auto;
@@ -881,10 +765,11 @@ footer{
             }
         }
         .containerpelea__boximg{
-            width: 50%;
+            width: 100%;
             @include display(row);
-            .containerpelea__img{
-                width: 600px;
+            .containerestatua__img{
+                width: 80%;
+                margin: 20px;
                 border: 6px solid #71163b36;
                 border-radius: 60px;
             }
@@ -910,10 +795,11 @@ footer{
             }
         }
         .containerestatua__boximg{
-            width: 50%;
+            width: 100%;
             @include display(row);
             .containerestatua__img{
-                width: 600px;
+                width: 80%;
+                margin: 20px;
                 border: 6px solid #71163b36;
                 border-radius: 60px;
             }
@@ -934,7 +820,7 @@ footer{
 
     #historia{
         margin-bottom: 10vh;
-        flex-direction: column;
+        flex-direction: row;
     }
 
     #historia .historia__block1 {
@@ -1011,7 +897,7 @@ footer{
                     letter-spacing: 1px;
                     font-size: 18px;
                     font-weight: 500;
-                    margin-left: 100px;
+                    margin-left: 27px;
                 }
                 .active{
                     color: rgb(122, 60, 158) !important;
