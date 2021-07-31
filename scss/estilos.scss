@@ -28,68 +28,69 @@
 /* NAVBAR */
 
 nav{
-    position: absolute;
-    background: linear-gradient(rgb(0, 0, 0) 10%, rgba(0, 0, 0, 0) 102%), #00000000;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding: 6px;
-    z-index: 1;
-    .logo{
-        display: flex;
-        align-items: center;
-        margin-right: auto;
-        .logo__center{
-            max-width: 90px;
-            cursor: $cursor;
-        }
-        .logo__title{
-            color: $colortext;
-            font-size: 2.4em;
-            font-weight: $titleweight;
-            font-family: 'Ninja Naruto', sans-serif;
-            font-style: italic;
-            letter-spacing: 2px;
-            text-transform: $transform;
-            padding-top: 7px;
-        }
+    background-color: #000;
+    .navbar{
+        padding: 0.3rem 0.3rem;
     }
-    .navlinks{
-        .navlinks__list{
-            display: inline-block;
-            padding: 0px 20px;
-            text-transform: $transform;
-            .navlinks__text{
-                color: $colortext;
-                font-size: 18px;
-                font-family: $title;
-                text-decoration: none;
-                letter-spacing: 1px;
+    .logo{
+        max-width: 85px;
+        cursor: $cursor;
+    }
+    .navbar-brand{
+        font-size: 2.5em;
+        font-weight: $titleweight;
+        font-family: 'Ninja Naruto', sans-serif;
+        font-style: italic;
+        padding-top: 0.5rem;
+        padding-bottom: 0rem;
+        line-height: normal;
+        letter-spacing: 2px;
+    }
+    .navbar-collapse{
+        justify-content: flex-end;
+        text-transform: $transform;
+        .navbar-nav{
+            color: $colortext;
+            font-size: 18px;
+            font-family: $title;
+            text-decoration: none;
+            letter-spacing: 1px;
+            .nav-link{
+                color: #f2f2f2e8;
+                padding-right: 1rem;
+                padding-left: 1rem;
                 transition: color .2s ease ;
                 &:hover{
                     color: rgb(122, 60, 158);
                 }
+                &:active{
+                    color: rgb(122, 60, 158) !important;
+                }
             }
-            .navlinks__text--button{
+            .nav-button{
+                font-weight: 600;
                 color: #ff0024;
-                font-family: $title;
-                text-decoration: none;
-                letter-spacing: 1px;
-                font-size: 18px;
-                font-weight: 500;
-                margin-left: 27px;
-            }
-            .active{
-                color: rgb(122, 60, 158) !important;
+                background-color: #f2f2f221;
+                border-radius: 30px;
+                margin-left: 1.5rem;
+                margin-right: 0.5rem;
+                &:hover{
+                    color: rgb(255, 255, 255);
+                }
             }
         }
     }
 }
 
+
+// .active{
+//     color: rgb(122, 60, 158) !important;
+// }
+
 /* INICIO */
 
 .bannerInicio{
-    background: linear-gradient(rgb(0, 0, 0) 7%, rgba(0, 0, 0, 0) 70%), url(../media/banner/bannerInicio.png);
+    background: linear-gradient(rgb(0, 0, 0) 1%, rgba(0, 0, 0, 0) 70%), url(../media/banner/bannerInicio.png);
     height: 100vh;
     background-position: center;
     background-size: cover;
@@ -455,65 +456,6 @@ footer{
 /* MEDIA QUERIES */
 
 @media (min-width: 576px) and (max-width: 768px){
-    nav{
-        @include display(column);
-        position: absolute;
-        background: linear-gradient(rgb(0, 0, 0) 10%, rgba(0, 0, 0, 0) 102%), #00000000;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        padding: 6px;
-        z-index: 1;
-        .logo{
-            margin: 0px;
-            .logo__center{
-                max-width: 120px;
-                cursor: $cursor;
-            }
-            .logo__title{
-                display: none;
-                color: $colortext;
-                font-size: 2.4em;
-                font-weight: $titleweight;
-                font-family: 'Ninja Naruto', sans-serif;
-                font-style: italic;
-                letter-spacing: 2px;
-                text-transform: $transform;
-                padding-top: 7px;
-            }
-        }
-        .navlinks{
-            padding-left: 0px;
-            padding-top: 20px;
-            @include display(column);
-            .navlinks__list{
-                display: inline-block;
-                text-transform: $transform;
-                .navlinks__text{
-                    color: $colortext;
-                    font-size: 2em;
-                    font-family: $title;
-                    text-decoration: none;
-                    transition: color .2s ease ;
-                    &:hover{
-                        color: rgb(122, 60, 158);
-                    }
-                }
-                .navlinks__text--button{
-                    color: #ff0024;
-                    font-family: $title;
-                    text-decoration: none;
-                    letter-spacing: 1px;
-                    font-size: 2em;
-                    font-weight: 500;
-                    margin: 0px;
-                }
-                .active{
-                    color: rgb(122, 60, 158) !important;
-                }
-            }
-        }
-    }
     .containerinicio{
         display: flex;
         flex-direction: column;
@@ -656,65 +598,6 @@ footer{
 }
 
 @media (min-width: 768px) and (max-width: 992px){
-    nav{
-        position: absolute;
-        background: linear-gradient(rgb(0, 0, 0) 10%, rgba(0, 0, 0, 0) 102%), #00000000;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        padding: 6px;
-        z-index: 1;
-        .logo{
-            display: flex;
-            align-items: center;
-            .logo__center{
-                max-width: 90px;
-                cursor: $cursor;
-            }
-            .logo__title{
-                display: none;
-                color: $colortext;
-                font-size: 2.4em;
-                font-weight: $titleweight;
-                font-family: 'Ninja Naruto', sans-serif;
-                font-style: italic;
-                letter-spacing: 2px;
-                text-transform: $transform;
-                padding-top: 7px;
-            }
-        }
-        .navlinks{
-            margin-top: 10px;
-            .navlinks__list{
-                display: inline-block;
-                padding: 0px 20px;
-                text-transform: $transform;
-                .navlinks__text{
-                    color: $colortext;
-                    font-size: 18px;
-                    font-family: $title;
-                    text-decoration: none;
-                    letter-spacing: 1px;
-                    transition: color .2s ease ;
-                    &:hover{
-                        color: rgb(122, 60, 158);
-                    }
-                }
-                .navlinks__text--button{
-                    color: #ff0024;
-                    font-family: $title;
-                    text-decoration: none;
-                    letter-spacing: 1px;
-                    font-size: 18px;
-                    font-weight: 500;
-                    margin-left: 3px;
-                }
-                .active{
-                    color: rgb(122, 60, 158) !important;
-                }
-            }
-        }
-    }
     .containerinicio{
         display: flex;
         flex-direction: column;
@@ -845,66 +728,6 @@ footer{
 }
 
 @media (min-width: 992px) and (max-width: 1200px){
-    nav{
-        position: absolute;
-        background: linear-gradient(rgb(0, 0, 0) 10%, rgba(0, 0, 0, 0) 102%), #00000000;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        padding: 6px;
-        z-index: 1;
-        .logo{
-            display: flex;
-            align-items: center;
-            margin-right: 200px;
-            .logo__center{
-                max-width: 90px;
-                cursor: $cursor;
-            }
-            .logo__title{
-                display: none;
-                color: $colortext;
-                font-size: 2.4em;
-                font-weight: $titleweight;
-                font-family: 'Ninja Naruto', sans-serif;
-                font-style: italic;
-                letter-spacing: 2px;
-                text-transform: $transform;
-                padding-top: 7px;
-            }
-        }
-        .navlinks{
-            margin-top: 10px;
-            .navlinks__list{
-                display: inline-block;
-                padding: 0px 20px;
-                text-transform: $transform;
-                .navlinks__text{
-                    color: $colortext;
-                    font-size: 18px;
-                    font-family: $title;
-                    text-decoration: none;
-                    letter-spacing: 1px;
-                    transition: color .2s ease ;
-                    &:hover{
-                        color: rgb(122, 60, 158);
-                    }
-                }
-                .navlinks__text--button{
-                    color: #ff0024;
-                    font-family: $title;
-                    text-decoration: none;
-                    letter-spacing: 1px;
-                    font-size: 18px;
-                    font-weight: 500;
-                    margin-left: 27px;
-                }
-                .active{
-                    color: rgb(122, 60, 158) !important;
-                }
-            }
-        }
-    }
     .containerinicio{
         display: flex;
         flex-direction: column;
