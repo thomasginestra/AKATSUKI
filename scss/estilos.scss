@@ -112,6 +112,8 @@ nav{
 .containerinicio{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     margin-top: 20vh;
     margin-bottom: 20vh;
     background-color: #22041d69;
@@ -403,6 +405,7 @@ footer{
         .footercontent__socials{
             list-style: none;
             margin-bottom: 0px;
+            padding: 0;
             @include display(row);
             .footercontent__list{
                 margin: 0px 50px;
@@ -438,96 +441,46 @@ footer{
 
 /* MEDIA QUERIES */
 
-@media (min-width: 403px) and (max-width: 768px){
+@media (min-width: 300px) and (max-width: 768px){
+
+
+    .containerinicio .containerinicio__text {
+        width: 100%;
+      }
+      
+      .containerinicio .containerinicio__video {
+        width: 90%;
+      }
+      
+      .containerpelea .containerpelea__text {
+        width: 90%;
+      }
+      
+      .containerpelea .containerpelea__boximg {
+        width: 100%;
+      }
+      .containerestatua .containerestatua__boximg {
+        width: 100%;
+      }
+      
+      .containerestatua .containerestatua__text {
+        width: 90%;
+      }
+      
+      footer .footercontent .footercontent__socials .footercontent__list {
+        margin: 0px 2em;
+      }
+      
     .containerinicio{
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 25vh;
-        background-color: #22041d69;
-        .containerinicio__video{
-            width: 100%;
-            margin: 20px;
-            .containerinicio__video-w{
-                width: 90%;
-            }
-        }
-        .containerinicio__text{
-            width: auto;
-            padding: 4vh;
-            font-family: $text;
-            color: $colortext;
-            @include display(column);
-            text-align: center;
-            .containerinicio__title{
-                color: #7a1434;
-                font-size: $sizetitle;
-                padding-bottom: 8px;
-            }
-            .containerinicio__p{
-                font-size: $sizetext;
-            }
-        }
     }
     .containerpelea{
-        @include display(column);
-        margin-bottom: 25vh;
-        background-color: #22041d69;
-        .containerpelea__text{
-            width: auto;
-            @include display(column);
-            color: $colortext;
-            font-family: $text;
-            .containerpelea__title{
-                color: #7a1434;
-                font-size: $sizetitle;
-                padding-bottom: 8px;
-            }
-            .containerpelea__p{
-                font-size: $sizetext;
-            }
-        }
-        .containerpelea__boximg{
-            width: 50%;
-            @include display(row);
-            .containerpelea__img{
-                width: 550px;
-                border: 6px solid #71163b36;
-                border-radius: 60px;
-            }
-        }
+        flex-direction: column;
     }
     .containerestatua{
-        @include display(column);
-        margin-bottom: 25vh;
-        background-color: #22041d69;
-        .containerestatua__text{
-            width: auto;
-            @include display(column);
-            margin: 5vh;
-            color: $colortext;
-            font-family: $text;
-            .containerestatua__title{
-                color: #7a1434;
-                font-size: $sizetitle;
-                padding-bottom: 8px;
-            }
-            .containerestatua__p{
-                font-size: $sizetext;
-            }
-        }
-        .containerestatua__boximg{
-            width: 100%;
-            @include display(row);
-            .containerestatua__img{
-                width: 100%;
-                margin: 20px;
-                border: 6px solid #71163b36;
-                border-radius: 60px;
-            }
-        }
+        flex-direction: column;
     }
+
     .backgroundunirse #form {
         width: 520px;
         margin: 0px;
@@ -581,95 +534,44 @@ footer{
 }
 
 @media (min-width: 768px) and (max-width: 992px){
+
+    
+.containerinicio .containerinicio__text {
+    width: 100%;
+  }
+  
+  .containerinicio .containerinicio__video {
+    width: 90%;
+  }
+  
+  .containerpelea .containerpelea__text {
+    width: 90%;
+  }
+  
+  .containerpelea .containerpelea__boximg {
+    width: 100%;
+  }
+  .containerestatua .containerestatua__boximg {
+    width: 100%;
+  }
+  
+  .containerestatua .containerestatua__text {
+    width: 90%;
+  }
+  
+  footer .footercontent .footercontent__socials .footercontent__list {
+    margin: 0px 2em;
+  }
+  
+
     .containerinicio{
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 25vh;
-        background-color: #22041d69;
-        .containerinicio__video{
-            width: 100%;
-            margin: 20px;
-            .containerinicio__video-w{
-                width: 90%;
-            }
-        }
-        .containerinicio__text{
-            width: auto;
-            padding: 4vh;
-            font-family: $text;
-            color: $colortext;
-            @include display(column);
-            text-align: center;
-            .containerinicio__title{
-                color: #7a1434;
-                font-size: $sizetitle;
-                padding-bottom: 8px;
-            }
-            .containerinicio__p{
-                font-size: $sizetext;
-            }
-        }
     }
     .containerpelea{
-        @include display(column);
-        margin-bottom: 25vh;
-        background-color: #22041d69;
-        .containerpelea__text{
-            width: auto;
-            @include display(column);
-            color: $colortext;
-            font-family: $text;
-            .containerpelea__title{
-                color: #7a1434;
-                font-size: $sizetitle;
-                padding-bottom: 8px;
-            }
-            .containerpelea__p{
-                font-size: $sizetext;
-            }
-        }
-        .containerpelea__boximg{
-            width: 100%;
-            @include display(row);
-            .containerestatua__img{
-                width: 80%;
-                margin: 20px;
-                border: 6px solid #71163b36;
-                border-radius: 60px;
-            }
-        }
+        flex-direction: column;
     }
     .containerestatua{
-        @include display(column);
-        margin-bottom: 25vh;
-        background-color: #22041d69;
-        .containerestatua__text{
-            width: auto;
-            @include display(column);
-            margin: 5vh;
-            color: $colortext;
-            font-family: $text;
-            .containerestatua__title{
-                color: #7a1434;
-                font-size: $sizetitle;
-                padding-bottom: 8px;
-            }
-            .containerestatua__p{
-                font-size: $sizetext;
-            }
-        }
-        .containerestatua__boximg{
-            width: 100%;
-            @include display(row);
-            .containerestatua__img{
-                width: 80%;
-                margin: 20px;
-                border: 6px solid #71163b36;
-                border-radius: 60px;
-            }
-        }
+        flex-direction: column;
     }
 
     .form__block1--controls{
@@ -711,91 +613,35 @@ footer{
 }
 
 @media (min-width: 992px) and (max-width: 1200px){
-    .containerinicio{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 25vh;
-        background-color: #22041d69;
-        .containerinicio__video{
-            width: 50%;
-            margin: 20px;
-        }
-        .containerinicio__text{
-            width: auto;
-            padding: 4vh;
-            font-family: $text;
-            color: $colortext;
-            @include display(column);
-            text-align: center;
-            .containerinicio__title{
-                color: #7a1434;
-                font-size: $sizetitle;
-                padding-bottom: 8px;
-            }
-            .containerinicio__p{
-                font-size: $sizetext;
-            }
-        }
-    }
-    .containerpelea{
-        @include display(column);
-        margin-bottom: 25vh;
-        background-color: #22041d69;
-        .containerpelea__text{
-            width: auto;
-            @include display(column);
-            color: $colortext;
-            font-family: $text;
-            .containerpelea__title{
-                color: #7a1434;
-                font-size: $sizetitle;
-                padding-bottom: 8px;
-            }
-            .containerpelea__p{
-                font-size: $sizetext;
-            }
-        }
-        .containerpelea__boximg{
-            width: 50%;
-            @include display(row);
-            .containerpelea__img{
-                width: 600px;
-                border: 6px solid #71163b36;
-                border-radius: 60px;
-            }
-        }
-    }
-    .containerestatua{
-        @include display(column);
-        margin-bottom: 25vh;
-        background-color: #22041d69;
-        .containerestatua__text{
-            width: auto;
-            @include display(column);
-            margin: 5vh;
-            color: $colortext;
-            font-family: $text;
-            .containerestatua__title{
-                color: #7a1434;
-                font-size: $sizetitle;
-                padding-bottom: 8px;
-            }
-            .containerestatua__p{
-                font-size: $sizetext;
-            }
-        }
-        .containerestatua__boximg{
-            width: 50%;
-            @include display(row);
-            .containerestatua__img{
-                width: 600px;
-                border: 6px solid #71163b36;
-                border-radius: 60px;
-            }
-        }
-    }
+    
+.containerinicio .containerinicio__text {
+    width: 100%;
+  }
+  
+  .containerinicio .containerinicio__video {
+    width: 90%;
+  }
+  
+  .containerpelea .containerpelea__text {
+    width: 90%;
+  }
+  
+  .containerpelea .containerpelea__boximg {
+    width: 100%;
+  }
+  .containerestatua .containerestatua__boximg {
+    width: 100%;
+  }
+  
+  .containerestatua .containerestatua__text {
+    width: 90%;
+  }
+  
+  footer .footercontent .footercontent__socials .footercontent__list {
+    margin: 0px 2em;
+  }
+  
+  
     #historia .historia__block1 {
         width: 360px;
     }
@@ -810,5 +656,14 @@ footer{
     }
     .backgroundGaleria .containergaleria .containergaleria__img {
         width: 510px;
+    }
+    .containerinicio{
+        flex-direction: column;
+    }
+    .containerpelea{
+        flex-direction: column;
+    }
+    .containerestatua{
+        flex-direction: column;
     }
 }

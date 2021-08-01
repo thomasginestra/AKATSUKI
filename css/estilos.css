@@ -134,6 +134,12 @@ nav .navbar-collapse .navbar-nav .nav-button:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 20vh;
   margin-bottom: 20vh;
   background-color: #22041d69;
@@ -586,6 +592,7 @@ footer .footercontent {
 footer .footercontent .footercontent__socials {
   list-style: none;
   margin-bottom: 0px;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -638,188 +645,45 @@ footer .footerbutton .footerbutton__text .footerbutton__text-span {
 }
 
 /* MEDIA QUERIES */
-@media (min-width: 403px) and (max-width: 768px) {
-  .containerinicio {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-bottom: 25vh;
-    background-color: #22041d69;
+@media (min-width: 300px) and (max-width: 768px) {
+  .containerinicio .containerinicio__text {
+    width: 100%;
   }
   .containerinicio .containerinicio__video {
-    width: 100%;
-    margin: 20px;
-  }
-  .containerinicio .containerinicio__video .containerinicio__video-w {
     width: 90%;
   }
-  .containerinicio .containerinicio__text {
-    width: auto;
-    padding: 4vh;
-    font-family: "Oswald", sans-serif;
-    color: #e7e8e9;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-  }
-  .containerinicio .containerinicio__text .containerinicio__title {
-    color: #7a1434;
-    font-size: 2.5em;
-    padding-bottom: 8px;
-  }
-  .containerinicio .containerinicio__text .containerinicio__p {
-    font-size: 1.8em;
-  }
-  .containerpelea {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 25vh;
-    background-color: #22041d69;
-  }
   .containerpelea .containerpelea__text {
-    width: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: #e7e8e9;
-    font-family: "Oswald", sans-serif;
-  }
-  .containerpelea .containerpelea__text .containerpelea__title {
-    color: #7a1434;
-    font-size: 2.5em;
-    padding-bottom: 8px;
-  }
-  .containerpelea .containerpelea__text .containerpelea__p {
-    font-size: 1.8em;
+    width: 90%;
   }
   .containerpelea .containerpelea__boximg {
-    width: 50%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .containerpelea .containerpelea__boximg .containerpelea__img {
-    width: 550px;
-    border: 6px solid #71163b36;
-    border-radius: 60px;
-  }
-  .containerestatua {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 25vh;
-    background-color: #22041d69;
-  }
-  .containerestatua .containerestatua__text {
-    width: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 5vh;
-    color: #e7e8e9;
-    font-family: "Oswald", sans-serif;
-  }
-  .containerestatua .containerestatua__text .containerestatua__title {
-    color: #7a1434;
-    font-size: 2.5em;
-    padding-bottom: 8px;
-  }
-  .containerestatua .containerestatua__text .containerestatua__p {
-    font-size: 1.8em;
+    width: 100%;
   }
   .containerestatua .containerestatua__boximg {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
-  .containerestatua .containerestatua__boximg .containerestatua__img {
-    width: 100%;
-    margin: 20px;
-    border: 6px solid #71163b36;
-    border-radius: 60px;
+  .containerestatua .containerestatua__text {
+    width: 90%;
+  }
+  footer .footercontent .footercontent__socials .footercontent__list {
+    margin: 0px 2em;
+  }
+  .containerinicio {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .containerpelea {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .containerestatua {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .backgroundunirse #form {
     width: 520px;
@@ -877,188 +741,44 @@ footer .footerbutton .footerbutton__text .footerbutton__text-span {
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
-  .containerinicio {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-bottom: 25vh;
-    background-color: #22041d69;
+  .containerinicio .containerinicio__text {
+    width: 100%;
   }
   .containerinicio .containerinicio__video {
-    width: 100%;
-    margin: 20px;
-  }
-  .containerinicio .containerinicio__video .containerinicio__video-w {
     width: 90%;
   }
-  .containerinicio .containerinicio__text {
-    width: auto;
-    padding: 4vh;
-    font-family: "Oswald", sans-serif;
-    color: #e7e8e9;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-  }
-  .containerinicio .containerinicio__text .containerinicio__title {
-    color: #7a1434;
-    font-size: 2.5em;
-    padding-bottom: 8px;
-  }
-  .containerinicio .containerinicio__text .containerinicio__p {
-    font-size: 1.8em;
-  }
-  .containerpelea {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 25vh;
-    background-color: #22041d69;
-  }
   .containerpelea .containerpelea__text {
-    width: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: #e7e8e9;
-    font-family: "Oswald", sans-serif;
-  }
-  .containerpelea .containerpelea__text .containerpelea__title {
-    color: #7a1434;
-    font-size: 2.5em;
-    padding-bottom: 8px;
-  }
-  .containerpelea .containerpelea__text .containerpelea__p {
-    font-size: 1.8em;
+    width: 90%;
   }
   .containerpelea .containerpelea__boximg {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .containerpelea .containerpelea__boximg .containerestatua__img {
-    width: 80%;
-    margin: 20px;
-    border: 6px solid #71163b36;
-    border-radius: 60px;
-  }
-  .containerestatua {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 25vh;
-    background-color: #22041d69;
-  }
-  .containerestatua .containerestatua__text {
-    width: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 5vh;
-    color: #e7e8e9;
-    font-family: "Oswald", sans-serif;
-  }
-  .containerestatua .containerestatua__text .containerestatua__title {
-    color: #7a1434;
-    font-size: 2.5em;
-    padding-bottom: 8px;
-  }
-  .containerestatua .containerestatua__text .containerestatua__p {
-    font-size: 1.8em;
   }
   .containerestatua .containerestatua__boximg {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
-  .containerestatua .containerestatua__boximg .containerestatua__img {
-    width: 80%;
-    margin: 20px;
-    border: 6px solid #71163b36;
-    border-radius: 60px;
+  .containerestatua .containerestatua__text {
+    width: 90%;
+  }
+  footer .footercontent .footercontent__socials .footercontent__list {
+    margin: 0px 2em;
+  }
+  .containerinicio {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .containerpelea {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .containerestatua {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .form__block1--controls {
     width: 90%;
@@ -1098,183 +818,26 @@ footer .footerbutton .footerbutton__text .footerbutton__text-span {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-  .containerinicio {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-bottom: 25vh;
-    background-color: #22041d69;
+  .containerinicio .containerinicio__text {
+    width: 100%;
   }
   .containerinicio .containerinicio__video {
-    width: 50%;
-    margin: 20px;
-  }
-  .containerinicio .containerinicio__text {
-    width: auto;
-    padding: 4vh;
-    font-family: "Oswald", sans-serif;
-    color: #e7e8e9;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-  }
-  .containerinicio .containerinicio__text .containerinicio__title {
-    color: #7a1434;
-    font-size: 2.5em;
-    padding-bottom: 8px;
-  }
-  .containerinicio .containerinicio__text .containerinicio__p {
-    font-size: 1.8em;
-  }
-  .containerpelea {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 25vh;
-    background-color: #22041d69;
+    width: 90%;
   }
   .containerpelea .containerpelea__text {
-    width: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: #e7e8e9;
-    font-family: "Oswald", sans-serif;
-  }
-  .containerpelea .containerpelea__text .containerpelea__title {
-    color: #7a1434;
-    font-size: 2.5em;
-    padding-bottom: 8px;
-  }
-  .containerpelea .containerpelea__text .containerpelea__p {
-    font-size: 1.8em;
+    width: 90%;
   }
   .containerpelea .containerpelea__boximg {
-    width: 50%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .containerpelea .containerpelea__boximg .containerpelea__img {
-    width: 600px;
-    border: 6px solid #71163b36;
-    border-radius: 60px;
-  }
-  .containerestatua {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 25vh;
-    background-color: #22041d69;
-  }
-  .containerestatua .containerestatua__text {
-    width: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 5vh;
-    color: #e7e8e9;
-    font-family: "Oswald", sans-serif;
-  }
-  .containerestatua .containerestatua__text .containerestatua__title {
-    color: #7a1434;
-    font-size: 2.5em;
-    padding-bottom: 8px;
-  }
-  .containerestatua .containerestatua__text .containerestatua__p {
-    font-size: 1.8em;
+    width: 100%;
   }
   .containerestatua .containerestatua__boximg {
-    width: 50%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    width: 100%;
   }
-  .containerestatua .containerestatua__boximg .containerestatua__img {
-    width: 600px;
-    border: 6px solid #71163b36;
-    border-radius: 60px;
+  .containerestatua .containerestatua__text {
+    width: 90%;
+  }
+  footer .footercontent .footercontent__socials .footercontent__list {
+    margin: 0px 2em;
   }
   #historia .historia__block1 {
     width: 360px;
@@ -1290,6 +853,24 @@ footer .footerbutton .footerbutton__text .footerbutton__text-span {
   }
   .backgroundGaleria .containergaleria .containergaleria__img {
     width: 510px;
+  }
+  .containerinicio {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .containerpelea {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .containerestatua {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
