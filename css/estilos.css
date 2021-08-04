@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap");
-/* MAIN */
+/* BACKGROUND BODY */
 .bodyinicio {
   background: #2f1b31;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(15%, #2f1b31), color-stop(50%, #861234), color-stop(70%, #2f1b31));
@@ -119,26 +119,22 @@ nav .navbar-collapse .navbar-nav .nav-button:hover {
           filter: grayscale(20%);
 }
 
+/*
 .bannerinicio__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  padding-top: 70vh;
-  padding-right: 10vh;
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    padding-top: 70vh;
+    padding-right: 10vh;
+    .bannerinicio__title{
+        font-size: 10em;
+        font-family: $title;
+        font-weight: bold;
+        color: #dcd1d6;
+        margin-right: 2vh;
+    }
 }
-
-.bannerinicio__container .bannerinicio__title {
-  font-size: 10em;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  color: #dcd1d6;
-  margin-right: 2vh;
-}
-
+*/
 .containerinicio {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -160,20 +156,7 @@ nav .navbar-collapse .navbar-nav .nav-button:hover {
 
 .containerinicio .containerinicio__video {
   width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 5vh;
+  margin: 3vh;
 }
 
 .containerinicio .containerinicio__video .containerinicio__video-w {
@@ -185,19 +168,6 @@ nav .navbar-collapse .navbar-nav .nav-button:hover {
   padding: 4vh;
   font-family: "Oswald", sans-serif;
   color: #e7e8e9;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: center;
 }
 
@@ -246,7 +216,7 @@ nav .navbar-collapse .navbar-nav .nav-button:hover {
   width: 50%;
   color: #e7e8e9;
   font-family: "Oswald", sans-serif;
-  margin: 5vh;
+  margin: 3vh;
 }
 
 .containerpelea .containerpelea__text .containerpelea__title {
@@ -303,19 +273,6 @@ nav .navbar-collapse .navbar-nav .nav-button:hover {
 
 .containerestatua .containerestatua__text {
   width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: 5vh;
   color: #e7e8e9;
   font-family: "Oswald", sans-serif;
@@ -572,8 +529,8 @@ nav .navbar-collapse .navbar-nav .nav-button:hover {
 
 /* FOOTER */
 footer .footercontent {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(255, 255, 253, 0)), color-stop(150%, black));
-  background: linear-gradient(180deg, rgba(255, 255, 253, 0) 20%, black 150%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 253, 0)), color-stop(120%, black));
+  background: linear-gradient(180deg, rgba(255, 255, 253, 0) 0%, black 120%);
 }
 
 footer .footercontent .footercontent__socials {
@@ -596,7 +553,7 @@ footer .footercontent .footercontent__socials {
 }
 
 footer .footercontent .footercontent__socials .footercontent__list {
-  margin: 0px 50px;
+  margin: 0 4em;
 }
 
 footer .footercontent .footercontent__socials .footercontent__icons {
@@ -619,7 +576,7 @@ footer .footerbutton {
 
 footer .footerbutton .footerbutton__text {
   color: #e7e8e9;
-  font-size: 14px;
+  font-size: 0.8em;
   word-spacing: 2px;
   -webkit-text-decoration: capitalize;
           text-decoration: capitalize;
@@ -691,13 +648,17 @@ footer .footerbutton .footerbutton__text .footerbutton__text-span {
     width: 80%;
     margin: 80px auto -50px auto;
   }
-  .footercontent__socials {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  /* FOOTER */
+  footer .footercontent .footercontent__socials {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
-  .footercontent__socials .footercontent__list {
-    margin: 0px 2em;
+  footer .footercontent .footercontent__socials .footercontent__list {
+    margin: auto;
+  }
+  footer .footerbutton .footerbutton__text {
+    font-size: 0.7em;
   }
   .navbar-brand {
     display: none;
@@ -793,13 +754,17 @@ footer .footerbutton .footerbutton__text .footerbutton__text-span {
     width: 80%;
     margin: 80px auto -50px auto;
   }
-  .footercontent__socials {
+  /* FOOTER */
+  footer .footercontent .footercontent__socials {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  .footercontent__socials .footercontent__list {
-    margin: 0px 2em;
+  footer .footercontent .footercontent__socials .footercontent__list {
+    margin: auto;
+  }
+  footer .footerbutton .footerbutton__text {
+    font-size: 0.8em;
   }
   .backgroundunirse #form {
     width: 520px;
@@ -821,12 +786,6 @@ footer .footerbutton .footerbutton__text .footerbutton__text-span {
   }
   .backgroundunirse #form {
     width: 730px;
-  }
-  .backgroundGaleria .containergaleria .containergaleria__img {
-    width: 530px;
-  }
-  .titlegaleria .titlegaleria__text {
-    font-size: 3.5em;
   }
   .backgroundGaleria .containergaleria {
     width: 100%;

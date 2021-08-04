@@ -1,7 +1,7 @@
 @import "fuentes";
 @import "variables";
 
-/* MAIN */
+/* BACKGROUND BODY */
 
 .bodyinicio{
     background: rgb(47,27,49);
@@ -103,7 +103,7 @@ nav{
     filter: grayscale(20%);
 }
 
-
+/*
 .bannerinicio__container {
     display: flex;
     width: 100%;
@@ -118,7 +118,7 @@ nav{
         margin-right: 2vh;
     }
 }
-
+*/
 
 
 .containerinicio{
@@ -131,8 +131,7 @@ nav{
     background-color: #22041d69;
     .containerinicio__video{
         width: 50%;
-        @include display(row);
-        margin: 5vh;
+        margin: 3vh;
         .containerinicio__video-w{
             width: 100%;
         }
@@ -142,7 +141,6 @@ nav{
         padding: 4vh;
         font-family: $text;
         color: $colortext;
-        @include display(column);
         text-align: center;
         .containerinicio__title{
             color: #7a1434;
@@ -164,7 +162,7 @@ nav{
         width: 50%;
         color: $colortext;
         font-family: $text;
-        margin: 5vh;
+        margin: 3vh;
         .containerpelea__title{
             color: #7a1434;
             font-size: $sizetitle;
@@ -192,7 +190,6 @@ nav{
     background-color: #22041d69;
     .containerestatua__text{
         width: 50%;
-        @include display(column);
         margin: 5vh;
         color: $colortext;
         font-family: $text;
@@ -390,14 +387,14 @@ nav{
 
 footer{
     .footercontent{
-        background: linear-gradient(180deg, rgba(255, 255, 253, 0) 20%, black 150%);
+        background: linear-gradient(180deg, rgba(255, 255, 253, 0) 0%, black 120%);
         .footercontent__socials{
             list-style: none;
             margin-bottom: 0px;
             padding: 0;
             @include display(row);
             .footercontent__list{
-                margin: 0px 50px;
+                margin: 0 4em;;
             }
             .footercontent__icons{
                 text-decoration: none;
@@ -416,7 +413,7 @@ footer{
         text-align: center;
         .footerbutton__text{
             color: $colortext;
-            font-size: 14px;
+            font-size: 0.8em;
             word-spacing: 2px;
             text-decoration: capitalize;
             margin-bottom: 0 !important;
@@ -478,12 +475,25 @@ footer{
         }
     }
 
-    .footercontent__socials {
-        justify-content: center;
-        .footercontent__list {
-            margin: 0px 2em;
+    /* FOOTER */
+    footer{
+        .footercontent{
+            .footercontent__socials{
+                justify-content: space-evenly;
+                .footercontent__list{
+                    margin: auto;
+                }
             }
+        }
+        .footerbutton{
+            .footerbutton__text{
+                font-size: 0.7em;
+            }
+        }
     }
+
+
+
     .navbar-brand {
         display: none;
     }
@@ -584,28 +594,22 @@ footer{
         }
     }
 
-    .footercontent__socials {
-        justify-content: space-evenly;
-        .footercontent__list {
-            margin: 0px 2em;
+    /* FOOTER */
+    footer{
+        .footercontent{
+            .footercontent__socials{
+                justify-content: space-evenly;
+                .footercontent__list{
+                    margin: auto;
+                }
+            }
+        }
+        .footerbutton{
+            .footerbutton__text{
+                font-size: 0.8em;
+            }
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -631,12 +635,6 @@ footer{
         width: 730px;
     }
 
-    .backgroundGaleria .containergaleria .containergaleria__img {
-        width: 530px;
-    }
-    .titlegaleria .titlegaleria__text {
-        font-size: 3.5em;
-    }
     .backgroundGaleria .containergaleria {
         width: 100%;
     }
@@ -732,9 +730,3 @@ footer{
         margin: 0px 2em;
     }
 }
-
-
-
-// p {
-//     margin-bottom: 0rem;
-// }
