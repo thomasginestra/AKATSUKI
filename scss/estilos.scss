@@ -61,17 +61,17 @@ nav{
                 padding-right: 1rem;
                 padding-left: 1rem;
                 transition: color .2s ease ;
+                padding: 0.4rem 1rem;
                 &:hover{
                     color: rgb(122, 60, 158);
                 }
             }
             .nav-button{
+                width: 110px;
                 color: #ff0024;
                 background-color: #f2f2f221;
                 font-weight: 600;
                 border-radius: 30px;
-                margin-left: 1.5rem;
-                margin-right: 0.5rem;
                 &:hover{
                     color: rgb(122, 60, 158);
                 }
@@ -80,15 +80,9 @@ nav{
     }
 }
 
-.navbar-expand-lg .navbar-nav .nav-link .active{
-    color: rgb(122, 60, 158);
-}
 .navbar-dark .navbar-toggler {
     color: transparent;
     border-color: transparent;
-}
-
-.navbar-toggler{
     font-size: 1.5rem;
 }
 
@@ -101,13 +95,31 @@ nav{
 
 /* INICIO */
 
-.bannerInicio{
+.bannerinicio{
     background: linear-gradient(rgb(0, 0, 0) 1%, rgba(0, 0, 0, 0) 70%), url(../media/banner/bannerInicio.png);
-    height: 100vh;
+    height: 92.7vh;
     background-position: center;
     background-size: cover;
     filter: grayscale(20%);
 }
+
+
+.bannerinicio__container {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    padding-top: 70vh;
+    padding-right: 10vh;
+    .bannerinicio__title{
+        font-size: 10em;
+        font-family: $title;
+        font-weight: bold;
+        color: #dcd1d6;
+        margin-right: 2vh;
+    }
+}
+
+
 
 .containerinicio{
     display: flex;
@@ -166,7 +178,7 @@ nav{
         width: 50%;
         @include display(row);
         .containerpelea__img{
-            width: 100%;
+            width: 80%;
             margin: 20px;
             border: 6px solid #71163b36;
             border-radius: 60px;
@@ -197,7 +209,7 @@ nav{
         width: 50%;
         @include display(row);
         .containerestatua__img{
-            width: 80%;
+            width: 70%;
             margin: 20px;
             border: 6px solid #71163b36;
             border-radius: 60px;
@@ -209,7 +221,7 @@ nav{
 
 .bannerMiembros{
     background: linear-gradient(rgb(0, 0, 0) 7%, rgba(0, 0, 0, 0) 70%), url(../media/banner/bannerMiembros.gif);
-    height: 100vh;
+    height: 92.7vh;
     background-position: bottom;
     background-size: cover;
     filter: grayscale(20%);
@@ -219,72 +231,49 @@ nav{
 
 .bannerHistoria{
     background: linear-gradient(rgb(0, 0, 0) 7%, rgba(0, 0, 0, 0) 70%), url(../media/banner/bannerHistoria.png);
-    height: 100vh;
+    height: 92.7vh;
     background-position: bottom;
     background-size: cover;
     filter: grayscale(40%);
 }
 
-#historia{
-    display: flex;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    justify-content: space-evenly;
-    .historia__block--title{
+    .historia__container{
         display: flex;
-        justify-content: center;
-        color: #743644;
-        font-size: 2em;
-    }
-    .historia__block1{
-        width: 30%;
-        padding: 30px;
-        margin: 10px;
-        background: #2c2e34;
-        border-radius: 40px;
-        font-family: $text;
-        .historia__block--text1{
-            color: $colortext;
-            font-size: 1.4em;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+        justify-content: space-evenly;
+        .historia__block--title{
+            display: flex;
+            justify-content: center;
+            color: #743644;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .historia__block{
+            width: 30%;
+            padding: 30px;
+            margin: 10px;
+            background: #1c1c1c;
+            border-radius: 40px;
+            font-family: $text;
+            .historia__block_img{
+                width: 100%;
+                border: 3px solid #777;
+            }
+            .historia__block--text{
+                color: $colortext;
+                font-size: 1.4em;
+                margin-top: 10px;
+            }
         }
     }
-    .historia__block2{
-        width: 30%;
-        padding: 30px;
-        margin: 10px;
-        background: #2c2e34;
-        border-radius: 40px;
-        font-family: $text;
-        .historia__block--text2{
-            color: $colortext;
-            font-size: 1.4em;
-        }
-    }
-    .historia__block3{
-        width: 30%;
-        padding: 30px;
-        margin: 10px;
-        background: #2c2e34;
-        border-radius: 40px;
-        font-family: $text;
-        .historia__block--text3{
-            color: $colortext;
-            font-size: 1.4em;
-        }
-    }
-}
-
-#carrousel{
-    background: rgb(43,47,56);
-    margin-bottom: 30px;
-}
 
 
 /* GALERIA */
 
 .bannerGaleria{
     background: linear-gradient(rgb(0, 0, 0) 7%, rgba(0, 0, 0, 0) 70%), url(../media/banner/bannerGaleria.jpg);
-    height: 100vh;
+    height: 92.7vh;
     background-position: center;
     background-size: cover;
     filter: grayscale(20%);
@@ -318,7 +307,7 @@ nav{
 
 .bannerUnirse{
     background: linear-gradient(rgb(0, 0, 0) 7%, rgba(0, 0, 0, 0) 70%), url(../media/banner/bannerUnirse.png);
-    height: 100vh;
+    height: 92.7vh;
     background-position: bottom;
     background-size: cover;
 }
@@ -441,45 +430,80 @@ footer{
 
 /* MEDIA QUERIES */
 
-@media (min-width: 300px) and (max-width: 768px){
+@media (min-width: 50px) and (max-width: 576px){
 
-
-    .containerinicio .containerinicio__text {
-        width: 100%;
-      }
-      
-      .containerinicio .containerinicio__video {
-        width: 90%;
-      }
-      
-      .containerpelea .containerpelea__text {
-        width: 90%;
-      }
-      
-      .containerpelea .containerpelea__boximg {
-        width: 100%;
-      }
-      .containerestatua .containerestatua__boximg {
-        width: 100%;
-      }
-      
-      .containerestatua .containerestatua__text {
-        width: 90%;
-      }
-      
-      footer .footercontent .footercontent__socials .footercontent__list {
-        margin: 0px 2em;
-      }
-      
+    /* INICIO */
     .containerinicio{
         flex-direction: column;
+        .containerinicio__text {
+            width: 100%;
+        }
+        .containerinicio__video {
+            width: 90%;
+        }
     }
     .containerpelea{
         flex-direction: column;
+        .containerpelea__text {
+            width: 90%;
+        }
+        .containerpelea__boximg {
+            width: 100%;
+            .containerpelea__img {
+                width: 90%;
+            }
+        }
     }
     .containerestatua{
         flex-direction: column;
+        .containerestatua__boximg {
+            width: 100%;
+            .containerestatua__img {
+                width: 90%;
+            }
+        }
+        .containerestatua__text {
+            width: 90%;
+        }
     }
+
+    /* HISTORIA */
+    .historia__container{
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 0vh;
+        .historia__block{
+            width: 80%;
+            margin: 80px auto -50px auto;
+        }
+    }
+
+    .footercontent__socials {
+        justify-content: center;
+        .footercontent__list {
+            margin: 0px 2em;
+            }
+    }
+    .navbar-brand {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     .backgroundunirse #form {
         width: 520px;
@@ -501,27 +525,112 @@ footer{
         width: 730px;
     }
 
-    #historia{
-        margin-bottom: 10vh;
+    .backgroundGaleria .containergaleria .containergaleria__img {
+        width: 530px;
+    }
+    .titlegaleria .titlegaleria__text {
+        font-size: 3.5em;
+    }
+    .backgroundGaleria .containergaleria {
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+
+    /* INICIO */
+    .containerinicio{
         flex-direction: column;
+        .containerinicio__text {
+            width: 100%;
+        }
+        .containerinicio__video {
+            width: 90%;
+        }
+    }
+    .containerpelea{
+        flex-direction: column;
+        .containerpelea__text {
+            width: 90%;
+        }
+        .containerpelea__boximg {
+            width: 100%;
+            .containerpelea__img {
+                width: 90%;
+            }
+        }
+    }
+    .containerestatua{
+        flex-direction: column;
+        .containerestatua__boximg {
+            width: 100%;
+            .containerestatua__img {
+                width: 90%;
+            }
+        }
+        .containerestatua__text {
+            width: 90%;
+        }
     }
 
-    #historia .historia__block1 {
-        width: 90%;
-        margin: 15px;
+    /* HISTORIA */
+    .historia__container{
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 0vh;
+        .historia__block{
+            width: 80%;
+            margin: 80px auto -50px auto;
+        }
     }
-    #historia .historia__block2 {
-        width: 90%;
-        margin: 15px;
+
+    .footercontent__socials {
+        justify-content: space-evenly;
+        .footercontent__list {
+            margin: 0px 2em;
+        }
     }
-    #historia .historia__block3 {
-        width: 90%;
-        margin: 15px;
-        padding: 40px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .backgroundunirse #form {
+        width: 520px;
+        margin: 0px;
     }
-    p {
-        margin-bottom: 0rem;
+    .backgroundunirse #form .form__container {
+        display: block;
     }
+
+    .backgroundunirse #form .form__container .form__block1 {
+        padding-right: 9px;
+    }
+    .backgroundunirse {
+        display: flex;
+        justify-content: center;
+    }
+
+    .backgroundunirse #form{
+        width: 730px;
+    }
+
     .backgroundGaleria .containergaleria .containergaleria__img {
         width: 530px;
     }
@@ -535,43 +644,47 @@ footer{
 
 @media (min-width: 768px) and (max-width: 992px){
 
-    
-.containerinicio .containerinicio__text {
-    width: 100%;
-  }
-  
-  .containerinicio .containerinicio__video {
-    width: 90%;
-  }
-  
-  .containerpelea .containerpelea__text {
-    width: 90%;
-  }
-  
-  .containerpelea .containerpelea__boximg {
-    width: 100%;
-  }
-  .containerestatua .containerestatua__boximg {
-    width: 100%;
-  }
-  
-  .containerestatua .containerestatua__text {
-    width: 90%;
-  }
-  
-  footer .footercontent .footercontent__socials .footercontent__list {
-    margin: 0px 2em;
-  }
-  
-
+    /* INICIO */
     .containerinicio{
         flex-direction: column;
+        .containerinicio__text {
+            width: 100%;
+        }
+        .containerinicio__video {
+            width: 90%;
+        }
     }
     .containerpelea{
         flex-direction: column;
+        .containerpelea__text {
+            width: 90%;
+        }
+        .containerpelea__boximg {
+            width: 100%;
+        }
     }
     .containerestatua{
         flex-direction: column;
+        .containerestatua__boximg {
+            width: 100%;
+        }
+        .containerestatua__text {
+            width: 90%;
+        }
+    }
+    .footercontent__list {
+        margin: 0px 2em;
+    }
+
+    /* HISTORIA */
+    .historia__container{
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 0vh;
+        .historia__block{
+            width: 80%;
+            margin: 80px auto -50px auto;
+        }
     }
 
     .form__block1--controls{
@@ -585,85 +698,43 @@ footer{
     .backgroundunirse #form{
         width: 730px;
     }
-
-    #historia{
-        margin-bottom: 10vh;
-        flex-direction: row;
-    }
-
-    #historia .historia__block1 {
-        width: 90%;
-        margin: 30 auto 10 auto;
-    }
-    #historia .historia__block2 {
-        width: 90%;
-        margin: 30 auto 10 auto;
-    }
-    #historia .historia__block3 {
-        width: 90%;
-        margin: 30 auto 10 auto;
-        padding: 40px;
-    }
-    p {
-        margin-bottom: 0rem;
-    }
-    .backgroundGaleria .containergaleria .containergaleria__img {
-        width: 680px;
-    }
 }
 
 @media (min-width: 992px) and (max-width: 1200px){
-    
-.containerinicio .containerinicio__text {
-    width: 100%;
-  }
-  
-  .containerinicio .containerinicio__video {
-    width: 90%;
-  }
-  
-  .containerpelea .containerpelea__text {
-    width: 90%;
-  }
-  
-  .containerpelea .containerpelea__boximg {
-    width: 100%;
-  }
-  .containerestatua .containerestatua__boximg {
-    width: 100%;
-  }
-  
-  .containerestatua .containerestatua__text {
-    width: 90%;
-  }
-  
-  footer .footercontent .footercontent__socials .footercontent__list {
-    margin: 0px 2em;
-  }
-  
-  
-    #historia .historia__block1 {
-        width: 360px;
-    }
-    #historia .historia__block2 {
-        width: 360px;
-    }
-    #historia .historia__block3 {
-        width: 360px;
-    }
-    p {
-        margin-bottom: 0rem;
-    }
-    .backgroundGaleria .containergaleria .containergaleria__img {
-        width: 510px;
-    }
     .containerinicio{
         flex-direction: column;
+        .containerinicio__text {
+            width: 100%;
+        }
+        .containerinicio__video {
+            width: 90%;
+        }
     }
     .containerpelea{
         flex-direction: column;
+        .containerpelea__text {
+            width: 90%;
+        }
+        .containerpelea__boximg {
+            width: 100%;
+        }
     }
     .containerestatua{
         flex-direction: column;
+        .containerestatua__boximg {
+            width: 100%;
+        }
+        .containerestatua__text {
+            width: 90%;
+        }
+    }
+    .footercontent__list {
+        margin: 0px 2em;
     }
 }
+
+
+
+// p {
+//     margin-bottom: 0rem;
+// }
