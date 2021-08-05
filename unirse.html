@@ -55,7 +55,7 @@
     <main>
         <section class="bannerUnirse"></section>
         <div class="backgroundunirse">
-        <form id="form" class="wow animate__animated animate__fadeInUp" action="recibe.html" method="POST" enctype="multipant/form/data">
+        <form id="form" class="wow animate__animated animate__fadeInUp" action="unirse.html" method="POST" enctype="multipant/form/data">
             <div class="form__container">
                 <div class="form__block1">
                     <label class="form__block1--title">Nombre:</label>
@@ -114,7 +114,7 @@
                     <textarea class="form__block2--textarea" name="objetivo" placeholder="ej:Destruir Konoha"></textarea>
                     <div class="form__block2--spacing">
                         <input class="form__block2--colorbutton" type="reset" name="reset" value="Limpiar">
-                        <input class="form__block2--colorbutton" type="submit" name="Enviar" value="Enviar">
+                        <input onclick="alertModal()" class="form__block2--colorbutton" type="submit" name="Enviar" value="Enviar">
                     </div>
                 </div>
             </div>
@@ -134,8 +134,9 @@
         </div>
     </footer>
     <!--SCRIPTS-->
-    <script src="https://kit.fontawesome.com/3e7e932d86.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="https://kit.fontawesome.com/3e7e932d86.js" crossorigin="anonymous"></script>
     <script script>new WOW().init();</script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>

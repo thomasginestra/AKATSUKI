@@ -112,7 +112,7 @@ nav .navbar-collapse .navbar-nav .nav-button:hover {
 .bannerinicio {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, black), color-stop(70%, rgba(0, 0, 0, 0))), url(../media/banner/bannerInicio.png);
   background: linear-gradient(black 1%, rgba(0, 0, 0, 0) 70%), url(../media/banner/bannerInicio.png);
-  height: 92.7vh;
+  height: 100vh;
   background-position: center;
   background-size: cover;
   -webkit-filter: grayscale(20%);
@@ -316,7 +316,7 @@ nav .navbar-collapse .navbar-nav .nav-button:hover {
 .bannerMiembros {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(7%, black), color-stop(70%, rgba(0, 0, 0, 0))), url(../media/banner/bannerMiembros.gif);
   background: linear-gradient(black 7%, rgba(0, 0, 0, 0) 70%), url(../media/banner/bannerMiembros.gif);
-  height: 92.7vh;
+  height: 100vh;
   background-position: bottom;
   background-size: cover;
   -webkit-filter: grayscale(20%);
@@ -327,7 +327,7 @@ nav .navbar-collapse .navbar-nav .nav-button:hover {
 .bannerHistoria {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(7%, black), color-stop(70%, rgba(0, 0, 0, 0))), url(../media/banner/bannerHistoria.png);
   background: linear-gradient(black 7%, rgba(0, 0, 0, 0) 70%), url(../media/banner/bannerHistoria.png);
-  height: 92.7vh;
+  height: 100vh;
   background-position: bottom;
   background-size: cover;
   -webkit-filter: grayscale(40%);
@@ -381,7 +381,7 @@ nav .navbar-collapse .navbar-nav .nav-button:hover {
 .bannerGaleria {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(7%, black), color-stop(70%, rgba(0, 0, 0, 0))), url(../media/banner/bannerGaleria.jpg);
   background: linear-gradient(black 7%, rgba(0, 0, 0, 0) 70%), url(../media/banner/bannerGaleria.jpg);
-  height: 92.7vh;
+  height: 100vh;
   background-position: center;
   background-size: cover;
   -webkit-filter: grayscale(20%);
@@ -426,7 +426,7 @@ nav .navbar-collapse .navbar-nav .nav-button:hover {
 .bannerUnirse {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(7%, black), color-stop(70%, rgba(0, 0, 0, 0))), url(../media/banner/bannerUnirse.png);
   background: linear-gradient(black 7%, rgba(0, 0, 0, 0) 70%), url(../media/banner/bannerUnirse.png);
-  height: 92.7vh;
+  height: 100vh;
   background-position: bottom;
   background-size: cover;
 }
