@@ -49,7 +49,7 @@ nav{
     }
     .navbar-collapse{
         justify-content: flex-end;
-        text-transform: $transform;
+        text-transform: uppercase;
         .navbar-nav{
             color: $colortext;
             font-size: 18px;
@@ -309,65 +309,177 @@ nav{
     background-size: cover;
 }
 
+
 .backgroundunirse{
-    padding: 2vh;
-    font-family: $text;
-    #form{
-        width: 850px;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    .form__container{
+        max-width: 700px;
+        width: 100%;
         background: rgb(17, 17, 17);
-        padding: 30px;
-        margin: auto;
-        color: rgb(187, 184, 184);
-        border-radius: 20px;
-        .form__container{
-            @include display(row);
-            .form__block1{
-                padding-right: 40px;
-                .form__block1--controls{
-                    width: 100%;
-                    background: #fff3;
-                    padding: 10px;
-                    border-radius: 20px;
-                    margin-bottom: 16px;
-                    border: 0px;
-                    font-size: 1em;
-                    color: #000;
-                }
-                .form__block1--title{
-                    font-size: 1.5em;
-                    margin-bottom: 0px;
+        padding: 25px 30px;
+        border-radius: 10px;
+        border: 1px solid $unirsecolor;
+        .form__title{
+            display: flex;
+            justify-content: center;
+            font-family: $text;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            color: #f93e3c;
+            font-size: 3em;
+            font-weight: 500;
+            position: relative;
+        }
+        form{
+            input[type="radio"]{
+                display: none;
+            }
+            .form__user-details{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin: 20px 0 12px 0;
+                .form__input-box{
+                    margin-bottom: 15px;
+                    width: calc(100% / 2 - 20px);
+                    .form__input{
+                        height: 40px;
+                        width: 100%;
+                        outline: none;
+                        color: #000;
+                        background: #fff3;
+                        border-radius: 20px;
+                        border: 1px solid #ccc;
+                        padding-left: 15px;
+                        font-size: 1em;
+                        border-bottom-width: 2px;
+                        transition: all 0.3s ease;
+                        &:focus{
+                            border-color: $unirsecolor;
+                        }
+                        &:valid{
+                            border-color: $unirsecolor;
+                        }
+                    }
+                    .form__details{
+                        display: block;
+                        font-size: 1.4em;
+                        font-family: $text;
+                        color: $colortext;
+                        font-weight: 500;
+                        margin-bottom: 5px;
+                    }
                 }
             }
-            .form__block2{
-                .form__block2--spacing{
-                    padding: 2px;
-                    .form__block2--title{
-                        font-size: 1.5em;
-                        margin-bottom: 12px;
+            .form__block{
+                display: flex;
+                flex-direction: row;
+                .form__gender-details{
+                    .form__gender-title{
+                        font-size: 1.4em;
+                        font-family: $text;
+                        color: $colortext;
+                        font-weight: 500;
                     }
-                    .form__block2--spacingtext{
-                        padding-left: 5px;
-                        font-size: 1.2em;
-                    }
-                    .form__block2--subtitle{
-                        font-size: 1.5em;
-                        margin-bottom: 20px;
-                    }
-                    .form__block2--colorbutton{
-                        background: #fff3;
-                        border-radius: 6px;
-                        color: rgb(187, 184, 184);
+                    .form__category{
+                        display: flex;
+                        width: 31.8%;
+                        margin: 14px 0;
+                        justify-content: space-between;
+                        .form__gender-label{
+                            display: flex;
+                            align-items: center;
+                            .form__gender{
+                                font-size: 1.2em;
+                                font-family: $text;
+                                color: $colortext;
+                                padding-right: 20px;
+                            }
+                            .form__dot{
+                                height: 15px;
+                                width: 15px;
+                                background: #d9d9d9;
+                                border-radius: 50%;
+                                margin-right: 10px;
+                                border: 5px solid transparent;
+                                transition: all 0.3s ease;
+                            }
+                        }
                     }
                 }
-                .form__block2--textarea{
-                    width: 340px;
-                    height: 130px;
+                .form__options{
+                    width: 50%;
+                    margin-left: 30px;
+                    .form__options-title{
+                        font-size: 1.4em;
+                        font-family: $text;
+                        color: $colortext;
+                        font-weight: 500;
+                    }
+                    .form__select{
+                        margin: 14px 0;
+                        background: #c4c4c4;
+                        border-radius: 20px;
+                        font-family: $text;
+                        font-weight: 500;
+                        .form__option{
+                            color: black;
+                        }
+                    }
+                }
+            }
+            .form__objetives{
+                display: flex;
+                flex-direction: column;
+                .form__textarea-title{
+                    text-align: center;
+                    margin-bottom: 10px;
+                    font-size: 1.4em;
+                    font-family: $text;
+                    color: $colortext;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                }
+                .form__textarea{
+                    border-radius: 20px;
+                    background: #c4c4c4;
+                    font-style: $text;
+                    font-size: 1.2em;
+                    width: 100%;
+                    height: 150px;
                     transition: all 1s;
-                    margin-bottom: 12px;
+                    border-color: #ccc;
+                    outline: none;
                     &:focus{
-                        width: 450px;
-                        height: 200px;
-                        font-size: 1.5em;
+                        border-color: $unirsecolor;
+                    }
+                }
+            }
+            .form__button{
+                display: flex;
+                justify-content: center;
+                height: 45px;
+                margin: 45px 0;
+                .form__button-input{
+                    height: 100%;
+                    width: 70%;
+                    outline: none;
+                    background: #fff3;
+                    border: 1px solid $colortext;
+                    color: $unirsecolor;
+                    border: none;
+                    border-radius: 40px;
+                    font-weight: 1em;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    transition: all 0.3s ease;
+                    &:hover{
+                        color: #fff;
+                        background: $unirsecolor;
                     }
                 }
             }
@@ -375,19 +487,19 @@ nav{
     }
 }
 
-/* RECIBE */
-
-#backgroundRecibe{
-    width: 100%;
-    height: 100%;
-    background-color: #4c4c54;
+#dot-1:checked ~ .form__category .form__gender-label .form__one,
+#dot-2:checked ~ .form__category .form__gender-label .form__two{
+    border-color: #d9d9d9;
+    background: $unirsecolor;
 }
 
 /* FOOTER */
 
 footer{
+    margin-top: 20vh;
     .footercontent{
-        background: linear-gradient(180deg, rgba(255, 255, 253, 0) 0%, black 120%);
+        background: #19001c;
+        border-top: 1px solid #570029;
         .footercontent__socials{
             list-style: none;
             margin-bottom: 0px;
@@ -418,7 +530,7 @@ footer{
             text-decoration: capitalize;
             margin-bottom: 0 !important;
             .footerbutton__text-span{
-                text-transform: $transform;
+                text-transform: uppercase;
                 opacity: .4;
             }
         }
@@ -428,6 +540,11 @@ footer{
 /* MEDIA QUERIES */
 
 @media (min-width: 50px) and (max-width: 576px){
+
+    /* NAVBAR */
+    .navbar-brand {
+        display: none;
+    }
 
     /* INICIO */
     .containerinicio{
@@ -469,9 +586,39 @@ footer{
         justify-content: center;
         flex-direction: column;
         margin-top: 0vh;
-        .historia__block{
+            .historia__block{
             width: 80%;
             margin: 80px auto -50px auto;
+        }
+    }
+
+    /* UNIRSE*/
+    .backgroundunirse{
+        .form__container{
+            max-width: 100%;
+            form{
+                .form__user-details{
+                    max-height: 300px;
+                    overflow-y: scroll;
+                    &::-webkit-scrollbar{
+                        width: 0;
+                    }
+                    .form__input-box{
+                        margin-bottom: 15px;
+                        width: 100%
+                    }
+                }
+                .form__category{
+                    width: 100%;
+                    flex-direction: column;
+                }
+                .form__block {
+                    flex-direction: column;
+                    .form__options{
+                        margin-left: 0px;
+                    }
+                }
+            }
         }
     }
 
@@ -490,59 +637,6 @@ footer{
                 font-size: 0.7em;
             }
         }
-    }
-
-
-
-    .navbar-brand {
-        display: none;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    .backgroundunirse #form {
-        width: 520px;
-        margin: 0px;
-    }
-    .backgroundunirse #form .form__container {
-        display: block;
-    }
-
-    .backgroundunirse #form .form__container .form__block1 {
-        padding-right: 9px;
-    }
-    .backgroundunirse {
-        display: flex;
-        justify-content: center;
-    }
-
-    .backgroundunirse #form{
-        width: 730px;
-    }
-
-    .backgroundGaleria .containergaleria .containergaleria__img {
-        width: 530px;
-    }
-    .titlegaleria .titlegaleria__text {
-        font-size: 3.5em;
-    }
-    .backgroundGaleria .containergaleria {
-        width: 100%;
     }
 }
 
@@ -610,34 +704,6 @@ footer{
             }
         }
     }
-
-
-
-
-
-    .backgroundunirse #form {
-        width: 520px;
-        margin: 0px;
-    }
-    .backgroundunirse #form .form__container {
-        display: block;
-    }
-
-    .backgroundunirse #form .form__container .form__block1 {
-        padding-right: 9px;
-    }
-    .backgroundunirse {
-        display: flex;
-        justify-content: center;
-    }
-
-    .backgroundunirse #form{
-        width: 730px;
-    }
-
-    .backgroundGaleria .containergaleria {
-        width: 100%;
-    }
 }
 
 @media (min-width: 768px) and (max-width: 992px){
@@ -685,17 +751,6 @@ footer{
         }
     }
 
-    .form__block1--controls{
-        width: 90%;
-    }
-
-    .form__block1{
-        padding-right: 0px;
-    }
-
-    .backgroundunirse #form{
-        width: 730px;
-    }
 }
 
 @media (min-width: 992px) and (max-width: 1200px){

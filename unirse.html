@@ -55,70 +55,83 @@
     <main>
         <section class="bannerUnirse"></section>
         <div class="backgroundunirse">
-        <form id="form" class="wow animate__animated animate__fadeInUp" action="unirse.html" method="POST" enctype="multipant/form/data">
+            <!--FORMULARIO -->
             <div class="form__container">
-                <div class="form__block1">
-                    <label class="form__block1--title">Nombre:</label>
-                    <input class="form__block1--controls" type="type" name="nombre" placeholder="ingresa tu nombre" required>
-                    <label class="form__block1--title">Clan:</label>
-                    <input class="form__block1--controls" type="type" name="clan" placeholder="ingresa tu clan" required>
-                    <label class="form__block1--title">Aldea:</label>
-                    <input class="form__block1--controls" type="type" name="aldea" placeholder="ingresa tu aldea" required>
-                    <label class="form__block1--title">Email:</label>
-                    <input class="form__block1--controls" type="email" name="email" placeholder="ingresa tu email" required>
-                    <label class="form__block1--title">Edad:</label>
-                    <input class="form__block1--controls" type="type" name="edad" placeholder="ingresa tu edad" required>
-                    <label class="form__block1--title">Altura:</label>
-                    <input class="form__block1--controls" type="type" name="altura" placeholder="ingresa tu altura">
-                    <label class="form__block1--title">Peso:</label>
-                    <input class="form__block1--controls" type="type" name="peso" placeholder="ingresa tu peso">
-                </div>
-                <div class="form__block2">
-                    <div class="form__block2--spacing">
-                        <label class="form__block2--title">Genero:</label>
-                        <input type="radio" name="opciones" value="1"><label class="form__block2--spacingtext"> hombre</label>
-                        <input type="radio" name="opciones" value="2"><label class="form__block2--spacingtext"> mujer</label>
+                <div class="form__title">Registrate</div>
+                <form action="unirse.html" method="POST" enctype="multipant/form/data">
+                    <div class="form__user-details">
+                        <div class="form__input-box">
+                            <span class="form__details">Nombre:</span>
+                            <input class="form__input" type="text" name="nombre" placeholder="ingresa tu nombre" required>
+                        </div>
+                        <div class="form__input-box">
+                            <span class="form__details">Edad:</span>
+                            <input class="form__input" type="text" name="nombre" placeholder="ingresa tu edad" required>
+                        </div>
+                        <div class="form__input-box">
+                            <span class="form__details">Peso:</span>
+                            <input class="form__input" type="text" name="nombre" placeholder="ingresa tu peso" required>
+                        </div>
+                        <div class="form__input-box">
+                            <span class="form__details">Aldea:</span>
+                            <input class="form__input" type="text" name="nombre" placeholder="ingresa tu aldea" required>
+                        </div>
+                        <div class="form__input-box">
+                            <span class="form__details">Clan:</span>
+                            <input class="form__input" type="text" name="nombre" placeholder="ingresa tu clan" required>
+                        </div>
+                        <div class="form__input-box">
+                            <span class="form__details">Email:</span>
+                            <input class="form__input" type="text" name="nombre" placeholder="ingresa tu email" required>
+                        </div>
                     </div>
-                    <div class="form__block2--spacing">
-                        <label class="form__block2--title">Subgenero:</label>
-                        <input type="checkbox" name="opciones" value="3"><label class="form__block2--spacingtext"> mortal</label>
-                        <input type="checkbox" name="opciones" value="4"><label class="form__block2--spacingtext"> noMuerto</label>
-                        <input type="checkbox" name="opciones" value="5"><label class="form__block2--spacingtext"> planta</label>
-                        <input type="checkbox" name="opciones" value="6"><label class="form__block2--spacingtext"> otro</label>
+                    <div class="form__block">
+                        <div class="form__gender-details">
+                            <input type="radio" name="gender" id="dot-1">
+                            <input type="radio" name="gender" id="dot-2">
+                            <span class="form__gender-title">Genero:</span>
+                            <div class="form__category">
+                                <label class="form__gender-label" for="dot-1">
+                                    <span class="form__dot form__one"></span>
+                                    <span class="form__gender">Hombre</span>
+                                </label>
+                                <label class="form__gender-label" for="dot-2">
+                                    <span class="form__dot form__two"></span>
+                                    <span class="form__gender">Mujer</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form__options">
+                            <span class="form__options-title">Naturaleza de Chakra:</span>
+                            <select class="form__select" name="opciones">
+                                <option class="form__option-select" selected disabled>Selecciona tu opcion</option>
+                                <option class="form__option">Viento</option>
+                                <option class="form__option">Tierra</option>
+                                <option class="form__option">Agua</option>
+                                <option class="form__option">Fuego</option>
+                                <option class="form__option">Rayo</option>
+                            </select>
+                        </div>
+                        <div class="form__options">
+                            <span class="form__options-title">Tipo de Jutsu:</span>
+                            <select class="form__select" name="opciones">
+                                <option class="form__option" selected disabled>Selecciona tu opcion</option>
+                                <option class="form__option">Ninjutsu</option>
+                                <option class="form__option">Taijutsu</option>
+                                <option class="form__option">Genjutsu</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="form__block2--spacing">
-                        <p class="form__block2--subtitle">Naturaleza de Chakra: </p>
+                    <div class="form__objetives">
+                        <span class="form__textarea-title">Objetivos:</span>
+                        <textarea class="form__textarea" name="objetivo" placeholder="ej: Destruir Konoha"></textarea>
                     </div>
-                    <div class="form__block2--spacing">
-                        <select name="opciones">
-                            <option selected disabled>Selecciona tu opcion</option>
-                            <option>Viento</option>
-                            <option>Tierra</option>
-                            <option>Agua</option>
-                            <option>Fuego</option>
-                            <option>Rayo</option>
-                        </select>
+                    <div class="form__button">
+                        <input onclick="alertModal()" class="form__button-input" type="submit" name="Enviar" value="Enviar">
                     </div>
-                    <div class="form__block2--spacing">
-                        <p class="form__block2--subtitle">Tipo de Jutsu: </p>
-                        <select name="opciones">
-                            <option selected disabled>Selecciona tu opcion</option>
-                            <option>Ninjutsu</option>
-                            <option>Taijutsu</option>
-                            <option>Genjutsu</option>
-                        </select>
-                    </div>
-                    <div class="form__block2--spacing">
-                        <p class="form__block2--subtitle">Objetivos</p>
-                    </div>
-                    <textarea class="form__block2--textarea" name="objetivo" placeholder="ej:Destruir Konoha"></textarea>
-                    <div class="form__block2--spacing">
-                        <input class="form__block2--colorbutton" type="reset" name="reset" value="Limpiar">
-                        <input onclick="alertModal()" class="form__block2--colorbutton" type="submit" name="Enviar" value="Enviar">
-                    </div>
-                </div>
+                </form>
             </div>
-        </form>
+        </div>
     </main>
     <footer>
         <div class="footercontent">
@@ -130,7 +143,7 @@
             </ul>
         </div>
         <div class="footerbutton">
-            <p class="footerbutton__text">copyright &copy;2021 Akatsuki. designed by <span class="footerbutton__text-span">Thomas Ginestra</span></p>
+            <p class="footerbutton__text">copy right &copy;2021 Akatsuki. designed by <span class="footerbutton__text-span">Thomas Ginestra</span></p>
         </div>
     </footer>
     <!--SCRIPTS-->
