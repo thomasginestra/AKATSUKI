@@ -128,7 +128,7 @@ nav .navbar-collapse .navbar-nav .nav-button:hover {
     padding-right: 10vh;
     .bannerinicio__title{
         font-size: 10em;
-        font-family: $title;
+        font-family: $raleway;
         font-weight: bold;
         color: #dcd1d6;
         margin-right: 2vh;
@@ -435,7 +435,7 @@ nav .navbar-collapse .navbar-nav .nav-button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
+  height: 130vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -657,6 +657,7 @@ nav .navbar-collapse .navbar-nav .nav-button:hover {
   border: 1px solid #e7e8e9;
   color: #f93e3c;
   border: none;
+  border: 1px solid #ffffffb5;
   border-radius: 40px;
   font-weight: 1em;
   letter-spacing: 1px;
@@ -683,8 +684,8 @@ footer {
 }
 
 footer .footercontent {
-  background: #19001c;
-  border-top: 1px solid #570029;
+  background: #131313;
+  border-top: 1px solid #6a6a6a;
 }
 
 footer .footercontent .footercontent__socials {
