@@ -8,7 +8,8 @@
     background: linear-gradient(0deg, rgba(47,27,49,1) 15%, rgba(134,18,52,1) 50%, rgba(47,27,49,1) 70%); 
 }
 .bodymiembros{
-    background: #201839;
+    background: rgb(62,4,50);
+    background: linear-gradient(0deg, #1a0418 25%, #13071e 60%);
 }
 .bodyhistoria{
     background: rgb(43,47,56);
@@ -100,27 +101,29 @@ nav{
 .bannerinicio{
     background: linear-gradient(rgb(0, 0, 0) 1%, rgba(0, 0, 0, 0) 70%), url(../media/banner/bannerInicio.png);
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-position: center;
     background-size: cover;
     filter: grayscale(20%);
 }
 
-/*
-.bannerinicio__container {
-    display: flex;
+.bannerinicio__container{
     width: 100%;
-    justify-content: end;
-    padding-top: 70vh;
-    padding-right: 10vh;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     .bannerinicio__title{
         font-size: 10em;
+        color: #a01c35;
+        margin-bottom: 0.3em;
+        text-shadow: 5px 5px 15px black;
         font-family: $raleway;
         font-weight: bold;
-        color: #dcd1d6;
-        margin-right: 2vh;
     }
 }
-*/
 
 .containerinicio{
     display: flex;
@@ -225,6 +228,22 @@ nav{
     filter: grayscale(20%);
 }
 
+.bannermiembros__container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    .bannermiembros__title{
+        font-size: 10em;
+        color: #24174c;
+        margin-bottom: 0.3em;
+        text-shadow: 5px 5px 15px rgb(0, 0, 0);
+        font-family: $raleway;
+        font-weight: bold;
+    }
+}
+
 .miembros__container{
     width: 100%;
     margin: 25px auto;
@@ -236,22 +255,22 @@ nav{
         .miembros__card{
             position: relative;
             width: 20em;
-            background-color: #6a1021;
+            background-color: #442144;
             background-size: cover;
             display: flex;
             flex-direction: column;
             align-items: center;
             margin: 4vh 1em;
             overflow: hidden;
-            cursor: pointer;
-            box-shadow: 6px 6px 3px 1px rgba(0, 0, 0, 0.3);
+            box-shadow: 6px 6px 3px 1px rgba(0, 0, 0, 0.589);
             border-radius: 80px;
             .miembros__content{
                 position: absolute;
                 width: 100%;
-                height: 60%;
+                height: 100%;
+                padding-top: 50%;
                 opacity: 0;
-                background-color: rgba(0, 0, 0, 0.71);
+                background-color: rgba(0, 0, 0, 0.58);
                 transition: all 500ms ease-out;
                 text-align: center;
                 bottom: 0;
@@ -290,35 +309,6 @@ nav{
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* HISTORIA */
 
 .bannerHistoria{
@@ -329,37 +319,52 @@ nav{
     filter: grayscale(40%);
 }
 
-    .historia__container{
+.bannerhistoria__container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    .bannerhistoria__title{
+        font-size: 10em;
+        color: #7f9951;
+        margin-bottom: 0.3em;
+        text-shadow: 5px 5px 15px black;
+        font-family: $raleway;
+        font-weight: bold;
+    }
+}
+.historia__container{
+    display: flex;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    justify-content: space-evenly;
+    .historia__block--title{
         display: flex;
-        margin-top: 10vh;
-        margin-bottom: 10vh;
-        justify-content: space-evenly;
-        .historia__block--title{
-            display: flex;
-            justify-content: center;
-            color: #743644;
-            font-size: 2em;
-            margin-bottom: 20px;
+        justify-content: center;
+        color: #743644;
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    .historia__block{
+        width: 30%;
+        padding: 30px;
+        margin: 10px;
+        background: #1c1c1c;
+        border-radius: 40px;
+        box-shadow: 6px 3px 7px 3px rgba(0, 0, 0, 0.3);
+        font-family: $oswald;
+        .historia__block_img{
+            width: 100%;
+            border: 2px solid #777;
         }
-        .historia__block{
-            width: 30%;
-            padding: 30px;
-            margin: 10px;
-            background: #1c1c1c;
-            border-radius: 40px;
-            box-shadow: 6px 3px 7px 3px rgba(0, 0, 0, 0.3);
-            font-family: $oswald;
-            .historia__block_img{
-                width: 100%;
-                border: 2px solid #777;
-            }
-            .historia__block--text{
-                color: $colortext;
-                font-size: 1.4em;
-                margin-top: 10px;
-            }
+        .historia__block--text{
+            color: $colortext;
+            font-size: 1.4em;
+            margin-top: 10px;
         }
     }
+}
 
 
 /* GALERIA */
@@ -371,6 +376,22 @@ nav{
     background-size: cover;
     filter: grayscale(20%);
     margin-bottom: 20px;
+}
+
+.bannergaleria__container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    .bannergaleria__title{
+        font-size: 10em;
+        color: #575756;
+        margin-bottom: 0.3em;
+        text-shadow: 5px 5px 15px black;
+        font-family: $raleway;
+        font-weight: bold;
+    }
 }
 
 .backgroundGaleria{
@@ -388,6 +409,7 @@ nav{
             margin: 5px;
         }
         .containergaleria__img{
+            box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.5);
             width: 22em;
             border-radius: 20px;
             &:hover{
@@ -406,8 +428,21 @@ nav{
     background-position: bottom;
     background-size: cover;
 }
-
-
+.bannerunirse__container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    .bannerunirse__title{
+        font-size: 10em;
+        color: #f93e3c;
+        margin-bottom: 0.3em;
+        text-shadow: 5px 5px 15px #f93e3c7d;
+        font-family: $raleway;
+        font-weight: bold;
+    }
+}
 .backgroundunirse{
     display: flex;
     height: 130vh;
@@ -646,6 +681,48 @@ footer{
     }
 
     /* INICIO */
+    .bannerinicio__container{
+        align-items: center;
+        .bannerinicio__title{
+            font-size: 6em;
+            margin: 0;
+        }
+    }
+    .bannermiembros__container{
+        align-items: center;
+        .bannermiembros__title{
+            font-size: 4em;
+            margin: 0;
+        }
+    }
+    .bannerhistoria__container{
+        align-items: center;
+        .bannerhistoria__title{
+            font-size: 5em;
+            margin: 0;
+        }
+    }
+    .bannerunirse__container{
+        align-items: center;
+        .bannerunirse__title{
+            font-size: 5em;
+            margin: 0;
+        }
+    }
+    .bannergaleria__container{
+
+        .bannergaleria__title{
+            font-size: 5em;
+            margin: 0;
+        }
+    }
+    .bannerunirse__container{
+        align-items: center;
+        .bannerunirse__title{
+            font-size: 5em;
+            margin: 0;
+        }
+    }
     .containerinicio{
         flex-direction: column;
         .containerinicio__text {
@@ -695,6 +772,7 @@ footer{
     .backgroundunirse{
         .form__container{
             max-width: 100%;
+            margin: 10px;
             form{
                 .form__user-details{
                     max-height: 300px;
@@ -742,6 +820,32 @@ footer{
 @media (min-width: 576px) and (max-width: 768px){
 
     /* INICIO */
+
+    .bannerinicio__container{
+        .bannerinicio__title{
+            font-size: 7em;
+        }
+    }
+    .bannermiembros__container{
+        .bannermiembros__title{
+            font-size: 6em;
+        }
+    }
+    .bannerhistoria__container{
+        .bannerhistoria__title{
+            font-size: 7em;
+        }
+    }
+    .bannergaleria__container{
+        .bannergaleria__title{
+            font-size: 7em;
+        }
+    }
+    .bannerunirse__container{
+        .bannerunirse__title{
+            font-size: 7em;
+        }
+    }
     .containerinicio{
         flex-direction: column;
         .containerinicio__text {
@@ -808,6 +912,31 @@ footer{
 @media (min-width: 768px) and (max-width: 992px){
 
     /* INICIO */
+    .bannerinicio__container{
+        .bannerinicio__title{
+            font-size: 9em;
+        }
+    }
+    .bannermiembros__container{
+        .bannermiembros__title{
+            font-size: 8em;
+        }
+    }
+    .bannerhistoria__container{
+        .bannerhistoria__title{
+            font-size: 9em;
+        }
+    }
+    .bannergaleria__container{
+        .bannergaleria__title{
+            font-size: 9em;
+        }
+    }
+    .bannerunirse__container{
+        .bannerunirse__title{
+            font-size: 9em;
+        }
+    }
     .containerinicio{
         flex-direction: column;
         .containerinicio__text {
@@ -835,10 +964,7 @@ footer{
             width: 90%;
         }
     }
-    .footercontent__list {
-        margin: 0px 2em;
-    }
-
+    
     /* HISTORIA */
     .historia__container{
         justify-content: center;
@@ -850,6 +976,10 @@ footer{
         }
     }
 
+    /* FOOTER */
+    .footercontent__list {
+        margin: 0px 2em;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1200px){

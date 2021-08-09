@@ -8,7 +8,9 @@
 }
 
 .bodymiembros {
-  background: #201839;
+  background: #3e0432;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(25%, #1a0418), color-stop(60%, #13071e));
+  background: linear-gradient(0deg, #1a0418 25%, #13071e 60%);
 }
 
 .bodyhistoria {
@@ -116,28 +118,44 @@ nav .navbar-collapse .navbar-nav .nav-button:hover {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, black), color-stop(70%, rgba(0, 0, 0, 0))), url(../media/banner/bannerInicio.png);
   background: linear-gradient(black 1%, rgba(0, 0, 0, 0) 70%), url(../media/banner/bannerInicio.png);
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-position: center;
   background-size: cover;
   -webkit-filter: grayscale(20%);
           filter: grayscale(20%);
 }
 
-/*
 .bannerinicio__container {
-    display: flex;
-    width: 100%;
-    justify-content: end;
-    padding-top: 70vh;
-    padding-right: 10vh;
-    .bannerinicio__title{
-        font-size: 10em;
-        font-family: $raleway;
-        font-weight: bold;
-        color: #dcd1d6;
-        margin-right: 2vh;
-    }
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
-*/
+
+.bannerinicio__container .bannerinicio__title {
+  font-size: 10em;
+  color: #a01c35;
+  margin-bottom: 0.3em;
+  text-shadow: 5px 5px 15px black;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
 .containerinicio {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -326,6 +344,29 @@ nav .navbar-collapse .navbar-nav .nav-button:hover {
           filter: grayscale(20%);
 }
 
+.bannermiembros__container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.bannermiembros__container .bannermiembros__title {
+  font-size: 10em;
+  color: #24174c;
+  margin-bottom: 0.3em;
+  text-shadow: 5px 5px 15px black;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
 .miembros__container {
   width: 100%;
   margin: 25px auto;
@@ -346,7 +387,7 @@ nav .navbar-collapse .navbar-nav .nav-button:hover {
 .miembros__container .miembros__display .miembros__card {
   position: relative;
   width: 20em;
-  background-color: #6a1021;
+  background-color: #442144;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -360,18 +401,18 @@ nav .navbar-collapse .navbar-nav .nav-button:hover {
           align-items: center;
   margin: 4vh 1em;
   overflow: hidden;
-  cursor: pointer;
-  -webkit-box-shadow: 6px 6px 3px 1px rgba(0, 0, 0, 0.3);
-          box-shadow: 6px 6px 3px 1px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 6px 6px 3px 1px rgba(0, 0, 0, 0.589);
+          box-shadow: 6px 6px 3px 1px rgba(0, 0, 0, 0.589);
   border-radius: 80px;
 }
 
 .miembros__container .miembros__display .miembros__card .miembros__content {
   position: absolute;
   width: 100%;
-  height: 60%;
+  height: 100%;
+  padding-top: 50%;
   opacity: 0;
-  background-color: rgba(0, 0, 0, 0.71);
+  background-color: rgba(0, 0, 0, 0.58);
   -webkit-transition: all 500ms ease-out;
   transition: all 500ms ease-out;
   text-align: center;
@@ -426,6 +467,29 @@ nav .navbar-collapse .navbar-nav .nav-button:hover {
   background-size: cover;
   -webkit-filter: grayscale(40%);
           filter: grayscale(40%);
+}
+
+.bannerhistoria__container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.bannerhistoria__container .bannerhistoria__title {
+  font-size: 10em;
+  color: #7f9951;
+  margin-bottom: 0.3em;
+  text-shadow: 5px 5px 15px black;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
 }
 
 .historia__container {
@@ -485,6 +549,29 @@ nav .navbar-collapse .navbar-nav .nav-button:hover {
   margin-bottom: 20px;
 }
 
+.bannergaleria__container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.bannergaleria__container .bannergaleria__title {
+  font-size: 10em;
+  color: #575756;
+  margin-bottom: 0.3em;
+  text-shadow: 5px 5px 15px black;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
 .backgroundGaleria {
   margin-top: 20vh;
 }
@@ -511,6 +598,8 @@ nav .navbar-collapse .navbar-nav .nav-button:hover {
 }
 
 .backgroundGaleria .containergaleria .containergaleria__img {
+  -webkit-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.5);
   width: 22em;
   border-radius: 20px;
 }
@@ -529,6 +618,29 @@ nav .navbar-collapse .navbar-nav .nav-button:hover {
   height: 100vh;
   background-position: bottom;
   background-size: cover;
+}
+
+.bannerunirse__container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.bannerunirse__container .bannerunirse__title {
+  font-size: 10em;
+  color: #f93e3c;
+  margin-bottom: 0.3em;
+  text-shadow: 5px 5px 15px #f93e3c7d;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
 }
 
 .backgroundunirse {
@@ -850,6 +962,55 @@ footer .footerbutton .footerbutton__text .footerbutton__text-span {
     display: none;
   }
   /* INICIO */
+  .bannerinicio__container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .bannerinicio__container .bannerinicio__title {
+    font-size: 6em;
+    margin: 0;
+  }
+  .bannermiembros__container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .bannermiembros__container .bannermiembros__title {
+    font-size: 4em;
+    margin: 0;
+  }
+  .bannerhistoria__container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .bannerhistoria__container .bannerhistoria__title {
+    font-size: 5em;
+    margin: 0;
+  }
+  .bannerunirse__container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .bannerunirse__container .bannerunirse__title {
+    font-size: 5em;
+    margin: 0;
+  }
+  .bannergaleria__container .bannergaleria__title {
+    font-size: 5em;
+    margin: 0;
+  }
+  .bannerunirse__container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .bannerunirse__container .bannerunirse__title {
+    font-size: 5em;
+    margin: 0;
+  }
   .containerinicio {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -910,6 +1071,7 @@ footer .footerbutton .footerbutton__text .footerbutton__text-span {
   /* UNIRSE*/
   .backgroundunirse .form__container {
     max-width: 100%;
+    margin: 10px;
   }
   .backgroundunirse .form__container form .form__user-details {
     max-height: 300px;
@@ -954,6 +1116,21 @@ footer .footerbutton .footerbutton__text .footerbutton__text-span {
 
 @media (min-width: 576px) and (max-width: 768px) {
   /* INICIO */
+  .bannerinicio__container .bannerinicio__title {
+    font-size: 7em;
+  }
+  .bannermiembros__container .bannermiembros__title {
+    font-size: 6em;
+  }
+  .bannerhistoria__container .bannerhistoria__title {
+    font-size: 7em;
+  }
+  .bannergaleria__container .bannergaleria__title {
+    font-size: 7em;
+  }
+  .bannerunirse__container .bannerunirse__title {
+    font-size: 7em;
+  }
   .containerinicio {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1027,6 +1204,21 @@ footer .footerbutton .footerbutton__text .footerbutton__text-span {
 
 @media (min-width: 768px) and (max-width: 992px) {
   /* INICIO */
+  .bannerinicio__container .bannerinicio__title {
+    font-size: 9em;
+  }
+  .bannermiembros__container .bannermiembros__title {
+    font-size: 8em;
+  }
+  .bannerhistoria__container .bannerhistoria__title {
+    font-size: 9em;
+  }
+  .bannergaleria__container .bannergaleria__title {
+    font-size: 9em;
+  }
+  .bannerunirse__container .bannerunirse__title {
+    font-size: 9em;
+  }
   .containerinicio {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1063,9 +1255,6 @@ footer .footerbutton .footerbutton__text .footerbutton__text-span {
   .containerestatua .containerestatua__text {
     width: 90%;
   }
-  .footercontent__list {
-    margin: 0px 2em;
-  }
   /* HISTORIA */
   .historia__container {
     -webkit-box-pack: center;
@@ -1080,6 +1269,10 @@ footer .footerbutton .footerbutton__text .footerbutton__text-span {
   .historia__container .historia__block {
     width: 80%;
     margin: 80px auto -50px auto;
+  }
+  /* FOOTER */
+  .footercontent__list {
+    margin: 0px 2em;
   }
 }
 
