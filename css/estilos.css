@@ -344,6 +344,7 @@ nav .navbar-collapse .navbar-nav .nav-button:hover {
 }
 
 .miembros__container .miembros__display .miembros__card {
+  position: relative;
   width: 20em;
   background-color: #6a1021;
   background-size: cover;
@@ -359,21 +360,59 @@ nav .navbar-collapse .navbar-nav .nav-button:hover {
           align-items: center;
   margin: 4vh 1em;
   overflow: hidden;
-  -webkit-box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  -webkit-box-shadow: 6px 6px 3px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 6px 6px 3px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 80px;
+}
+
+.miembros__container .miembros__display .miembros__card .miembros__content {
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.71);
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+  text-align: center;
+  bottom: 0;
+}
+
+.miembros__container .miembros__display .miembros__card .miembros__content:hover {
+  opacity: 1;
+  visibility: visible;
 }
 
 .miembros__container .miembros__display .miembros__card .miembros__card-title {
-  width: 100%;
-  background: #010000;
-  color: #ffffff;
+  font-size: 1.5em;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 2px;
+  color: #c51111;
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+
+.miembros__container .miembros__display .miembros__card .miembros__card-text {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.9em;
+  color: #fff;
+  margin: 0 1em 0 1em;
 }
 
 .miembros__container .miembros__display .miembros__card .miembros__img {
   width: 300px;
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
 }
 
-.tobi__img {
+.miembros__container .miembros__display .miembros__card .miembros__img:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.miembros__container .miembros__display .miembros__card .tobi__img {
   height: 500px;
   width: 180px !important;
 }
@@ -418,7 +457,8 @@ nav .navbar-collapse .navbar-nav .nav-button:hover {
   margin: 10px;
   background: #1c1c1c;
   border-radius: 40px;
-  border: 1px solid #777;
+  -webkit-box-shadow: 6px 3px 7px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 6px 3px 7px 3px rgba(0, 0, 0, 0.3);
   font-family: "Oswald", sans-serif;
 }
 
@@ -471,7 +511,7 @@ nav .navbar-collapse .navbar-nav .nav-button:hover {
 }
 
 .backgroundGaleria .containergaleria .containergaleria__img {
-  width: 400px;
+  width: 22em;
   border-radius: 20px;
 }
 

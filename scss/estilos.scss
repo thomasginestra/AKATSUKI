@@ -234,6 +234,7 @@ nav{
         justify-content: center;
         flex-wrap: wrap;
         .miembros__card{
+            position: relative;
             width: 20em;
             background-color: #6a1021;
             background-size: cover;
@@ -242,31 +243,52 @@ nav{
             align-items: center;
             margin: 4vh 1em;
             overflow: hidden;
-            box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.2);
-            .miembros__card-title{
+            cursor: pointer;
+            box-shadow: 6px 6px 3px 1px rgba(0, 0, 0, 0.3);
+            border-radius: 80px;
+            .miembros__content{
+                position: absolute;
                 width: 100%;
-                background: #010000;
-                color: #ffffff;
+                height: 60%;
+                opacity: 0;
+                background-color: rgba(0, 0, 0, 0.71);
+                transition: all 500ms ease-out;
+                text-align: center;
+                bottom: 0;
+                &:hover{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+            .miembros__card-title{
+                font-size: 1.5em;
+                font-family: $oswald;
+                letter-spacing: 2px;
+                color: rgb(197, 17, 17);
+                text-transform: uppercase;
+                margin-top: 8px;
+            }
+            .miembros__card-text{
+                font-family: $raleway;
+                font-size: 0.9em;
+                color: #fff;
+                margin: 0 1em 0 1em;
             }
             .miembros__img{
                 width: 300px;
+                transition: all 500ms ease-out;
+                &:hover{
+                    transform: scale(0.9);
+                    transition: 0.5s;
+                }
+            }
+            .tobi__img{
+                height: 500px;
+                width: 180px !important;
             }
         }
     }
 }
-
-
-.tobi__img{
-    height: 500px;
-    width: 180px !important;
-}
-
-
-
-
-
-
-
 
 
 
@@ -325,7 +347,7 @@ nav{
             margin: 10px;
             background: #1c1c1c;
             border-radius: 40px;
-            border: 1px solid #777;
+            box-shadow: 6px 3px 7px 3px rgba(0, 0, 0, 0.3);
             font-family: $oswald;
             .historia__block_img{
                 width: 100%;
@@ -366,7 +388,7 @@ nav{
             margin: 5px;
         }
         .containergaleria__img{
-            width: 400px;
+            width: 22em;
             border-radius: 20px;
             &:hover{
                 transform: scale(1.1);
