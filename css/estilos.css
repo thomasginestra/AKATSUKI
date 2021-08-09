@@ -89,10 +89,13 @@ nav .navbar-collapse .navbar-nav .nav-button {
   background-color: #f2f2f221;
   font-weight: 600;
   border-radius: 30px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 nav .navbar-collapse .navbar-nav .nav-button:hover {
-  color: #7a3c9e;
+  color: #e7e8e9;
+  background-color: #ff0024;
 }
 
 .navbar-dark .navbar-toggler {
@@ -323,6 +326,58 @@ nav .navbar-collapse .navbar-nav .nav-button:hover {
           filter: grayscale(20%);
 }
 
+.miembros__container {
+  width: 100%;
+  margin: 25px auto;
+}
+
+.miembros__container .miembros__display {
+  margin-top: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.miembros__container .miembros__display .miembros__card {
+  width: 20em;
+  background-color: #6a1021;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 4vh 1em;
+  overflow: hidden;
+  -webkit-box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.miembros__container .miembros__display .miembros__card .miembros__card-title {
+  width: 100%;
+  background: #010000;
+  color: #ffffff;
+}
+
+.miembros__container .miembros__display .miembros__card .miembros__img {
+  width: 300px;
+}
+
+.tobi__img {
+  height: 500px;
+  width: 180px !important;
+}
+
 /* HISTORIA */
 .bannerHistoria {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(7%, black), color-stop(70%, rgba(0, 0, 0, 0))), url(../media/banner/bannerHistoria.png);
@@ -363,12 +418,13 @@ nav .navbar-collapse .navbar-nav .nav-button:hover {
   margin: 10px;
   background: #1c1c1c;
   border-radius: 40px;
+  border: 1px solid #777;
   font-family: "Oswald", sans-serif;
 }
 
 .historia__container .historia__block .historia__block_img {
   width: 100%;
-  border: 3px solid #777;
+  border: 2px solid #777;
 }
 
 .historia__container .historia__block .historia__block--text {
@@ -390,11 +446,11 @@ nav .navbar-collapse .navbar-nav .nav-button:hover {
 }
 
 .backgroundGaleria {
-  margin-top: 10vh;
+  margin-top: 20vh;
 }
 
 .backgroundGaleria .containergaleria {
-  width: 90%;
+  width: 100%;
   margin: auto;
   list-style: none;
   padding: 20px;
@@ -403,6 +459,9 @@ nav .navbar-collapse .navbar-nav .nav-button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -413,6 +472,7 @@ nav .navbar-collapse .navbar-nav .nav-button:hover {
 
 .backgroundGaleria .containergaleria .containergaleria__img {
   width: 400px;
+  border-radius: 20px;
 }
 
 .backgroundGaleria .containergaleria .containergaleria__img:hover {

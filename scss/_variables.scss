@@ -1,12 +1,10 @@
 $raleway:'Raleway', sans-serif;
-$colortext:#e7e8e9;
+$oswald: 'Oswald', sans-serif;
 $cursor: default;
 $sizetitle: 2.5em;
 $sizetext: 1.6em;
+$colortext:#e7e8e9;
 $unirsecolor: #f93e3c;
-
-$titleweight: 400;
-$oswald: 'Oswald', sans-serif;
 
 @mixin display($direction){
     display: flex;

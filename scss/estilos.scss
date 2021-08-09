@@ -45,7 +45,7 @@ nav{
         padding-bottom: 0rem;
         line-height: normal;
         letter-spacing: 2px;
-        cursor: default;
+        cursor: $cursor;
     }
     .navbar-collapse{
         justify-content: flex-end;
@@ -72,8 +72,10 @@ nav{
                 background-color: #f2f2f221;
                 font-weight: 600;
                 border-radius: 30px;
+                transition: all 0.5s ease;
                 &:hover{
-                    color: rgb(122, 60, 158);
+                    color: $colortext;
+                    background-color: #ff0024;
                 }
             }
         }
@@ -119,7 +121,6 @@ nav{
     }
 }
 */
-
 
 .containerinicio{
     display: flex;
@@ -224,6 +225,78 @@ nav{
     filter: grayscale(20%);
 }
 
+.miembros__container{
+    width: 100%;
+    margin: 25px auto;
+    .miembros__display{
+        margin-top: 10vh;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .miembros__card{
+            width: 20em;
+            background-color: #6a1021;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 4vh 1em;
+            overflow: hidden;
+            box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.2);
+            .miembros__card-title{
+                width: 100%;
+                background: #010000;
+                color: #ffffff;
+            }
+            .miembros__img{
+                width: 300px;
+            }
+        }
+    }
+}
+
+
+.tobi__img{
+    height: 500px;
+    width: 180px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* HISTORIA */
 
 .bannerHistoria{
@@ -252,10 +325,11 @@ nav{
             margin: 10px;
             background: #1c1c1c;
             border-radius: 40px;
+            border: 1px solid #777;
             font-family: $oswald;
             .historia__block_img{
                 width: 100%;
-                border: 3px solid #777;
+                border: 2px solid #777;
             }
             .historia__block--text{
                 color: $colortext;
@@ -278,20 +352,22 @@ nav{
 }
 
 .backgroundGaleria{
-    margin-top: 10vh;
+    margin-top: 20vh;
     .containergaleria{
-        width: 90%;
+        width: 100%;
         margin: auto;
         list-style: none;
         padding: 20px;
         box-sizing: border-box;
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         .containergaleria__list{
             margin: 5px;
         }
         .containergaleria__img{
             width: 400px;
+            border-radius: 20px;
             &:hover{
                 transform: scale(1.1);
                 transition: 0.5s;
