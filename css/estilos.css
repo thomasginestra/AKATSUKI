@@ -867,7 +867,18 @@ nav .navbar-collapse .navbar-nav .nav-button:hover {
   margin: 45px 0;
 }
 
-.backgroundunirse .form__container form .form__button .form__button-input {
+.backgroundunirse .form__container form .form__button a {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+}
+
+.backgroundunirse .form__container form .form__button a .form__button-input {
   height: 100%;
   width: 70%;
   outline: none;
@@ -885,7 +896,7 @@ nav .navbar-collapse .navbar-nav .nav-button:hover {
   transition: all 0.3s ease;
 }
 
-.backgroundunirse .form__container form .form__button .form__button-input:hover {
+.backgroundunirse .form__container form .form__button a .form__button-input:hover {
   color: #fff;
   background: #f93e3c;
 }
