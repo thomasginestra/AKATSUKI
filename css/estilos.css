@@ -42,7 +42,7 @@ nav .navbar {
 
 nav .logo {
   max-width: 85px;
-  cursor: default;
+  cursor: pointer;
 }
 
 nav .navbar-brand {
@@ -54,7 +54,7 @@ nav .navbar-brand {
   padding-bottom: 0rem;
   line-height: normal;
   letter-spacing: 2px;
-  cursor: default;
+  cursor: pointer;
 }
 
 nav .navbar-collapse {
@@ -73,7 +73,7 @@ nav .navbar-collapse .navbar-nav {
 }
 
 nav .navbar-collapse .navbar-nav .nav-link {
-  color: #f2f2f2e8;
+  color: #fff;
   padding-right: 1rem;
   padding-left: 1rem;
   -webkit-transition: color .2s ease;
@@ -176,12 +176,18 @@ nav .navbar-collapse .navbar-nav .nav-button:hover {
 }
 
 .containerinicio .containerinicio__video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 50%;
   margin: 3vh;
 }
 
 .containerinicio .containerinicio__video .containerinicio__video-w {
-  width: 100%;
+  width: 90%;
 }
 
 .containerinicio .containerinicio__text {
@@ -968,7 +974,7 @@ footer .footerbutton .footerbutton__text .footerbutton__text-span {
             align-items: center;
   }
   .bannerinicio__container .bannerinicio__title {
-    font-size: 6em;
+    font-size: 20vw;
     margin: 0;
   }
   .bannermiembros__container {
@@ -977,7 +983,7 @@ footer .footerbutton .footerbutton__text .footerbutton__text-span {
             align-items: center;
   }
   .bannermiembros__container .bannermiembros__title {
-    font-size: 4em;
+    font-size: 18vw;
     margin: 0;
   }
   .bannerhistoria__container {
@@ -986,7 +992,7 @@ footer .footerbutton .footerbutton__text .footerbutton__text-span {
             align-items: center;
   }
   .bannerhistoria__container .bannerhistoria__title {
-    font-size: 5em;
+    font-size: 20vw;
     margin: 0;
   }
   .bannerunirse__container {
@@ -995,11 +1001,16 @@ footer .footerbutton .footerbutton__text .footerbutton__text-span {
             align-items: center;
   }
   .bannerunirse__container .bannerunirse__title {
-    font-size: 5em;
+    font-size: 20vw;
     margin: 0;
+  }
+  .bannergaleria__container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .bannergaleria__container .bannergaleria__title {
-    font-size: 5em;
+    font-size: 20vw;
     margin: 0;
   }
   .bannerunirse__container {
@@ -1008,7 +1019,7 @@ footer .footerbutton .footerbutton__text .footerbutton__text-span {
             align-items: center;
   }
   .bannerunirse__container .bannerunirse__title {
-    font-size: 5em;
+    font-size: 20vw;
     margin: 0;
   }
   .containerinicio {
@@ -1021,7 +1032,7 @@ footer .footerbutton .footerbutton__text .footerbutton__text-span {
     width: 100%;
   }
   .containerinicio .containerinicio__video {
-    width: 90%;
+    width: 100%;
   }
   .containerpelea {
     -webkit-box-orient: vertical;
@@ -1068,6 +1079,10 @@ footer .footerbutton .footerbutton__text .footerbutton__text-span {
     width: 80%;
     margin: 80px auto -50px auto;
   }
+  /* GALERIA */
+  .backgroundGaleria .containergaleria .containergaleria__list {
+    margin: 10px;
+  }
   /* UNIRSE*/
   .backgroundunirse .form__container {
     max-width: 100%;
@@ -1084,18 +1099,21 @@ footer .footerbutton .footerbutton__text .footerbutton__text-span {
     margin-bottom: 15px;
     width: 100%;
   }
-  .backgroundunirse .form__container form .form__category {
+  .backgroundunirse .form__container form .form__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .backgroundunirse .form__container form .form__block .form__gender-details .form__category {
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .backgroundunirse .form__container form .form__block {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .backgroundunirse .form__container form .form__block .form__gender-details .form__category .form__gender-label .form__gender {
+    padding-right: 0px;
   }
   .backgroundunirse .form__container form .form__block .form__options {
     margin-left: 0px;
