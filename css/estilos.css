@@ -455,7 +455,7 @@ nav .navbar-collapse .navbar-nav .nav-button:hover {
 
 .miembros__container .miembros__display .miembros__card .tobi__img {
   height: 500px;
-  width: 180px !important;
+  width: 180px;
 }
 
 /* HISTORIA */

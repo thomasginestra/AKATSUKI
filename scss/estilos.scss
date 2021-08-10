@@ -5,7 +5,7 @@
 
 .bodyinicio{
     background: rgb(47,27,49);
-    background: linear-gradient(0deg, rgba(47,27,49,1) 15%, rgba(134,18,52,1) 50%, rgba(47,27,49,1) 70%); 
+    background: linear-gradient(0deg, rgba(47,27,49,1) 15%, rgba(134,18,52,1) 50%, rgba(47,27,49,1) 70%);
 }
 .bodymiembros{
     background: rgb(62,4,50);
@@ -15,12 +15,10 @@
     background: rgb(43,47,56);
     background: linear-gradient(180deg, rgba(43,47,56,1) 35%, rgba(130,131,139,1) 100%);
 }
-
 .bodygaleria{
     background: rgb(255,255,253);
     background: linear-gradient(0deg, rgba(255,255,253,1) 0%, rgba(17,17,16,1) 60%);
 }
-
 .bodyunirse{
     background: rgb(134,0,16);
     background: linear-gradient(0deg, rgba(134,0,16,1) 0%, rgba(0,0,0,1) 40%);
@@ -35,10 +33,10 @@ nav{
     }
     .logo{
         max-width: 85px;
-        cursor: $cursor;
+        cursor: default;
     }
     .navbar-brand{
-        font-size: 2.5em;
+        font-size: $sizetitle;
         font-weight: 400;
         font-family: 'Ninja Naruto', sans-serif;
         font-style: italic;
@@ -46,7 +44,7 @@ nav{
         padding-bottom: 0rem;
         line-height: normal;
         letter-spacing: 2px;
-        cursor: $cursor;
+        cursor: default;
     }
     .navbar-collapse{
         justify-content: flex-end;
@@ -83,7 +81,7 @@ nav{
     }
 }
 
-.navbar-dark .navbar-toggler {
+.navbar-dark .navbar-toggler{
     color: transparent;
     border-color: transparent;
     font-size: 1.5rem;
@@ -92,7 +90,7 @@ nav{
 .navbar-dark .navbar-nav .active>.nav-link,
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link.show,
-.navbar-dark .navbar-nav .show>.nav-link {
+.navbar-dark .navbar-nav .show>.nav-link{
     color:rgb(122, 60, 158);
 }
 
@@ -303,7 +301,7 @@ nav{
             }
             .tobi__img{
                 height: 500px;
-                width: 180px !important;
+                width: 180px;
             }
         }
     }
@@ -334,6 +332,7 @@ nav{
         font-weight: bold;
     }
 }
+
 .historia__container{
     display: flex;
     margin-top: 10vh;
@@ -365,7 +364,6 @@ nav{
         }
     }
 }
-
 
 /* GALERIA */
 
@@ -428,6 +426,7 @@ nav{
     background-position: bottom;
     background-size: cover;
 }
+
 .bannerunirse__container{
     width: 100%;
     height: 100%;
@@ -436,13 +435,14 @@ nav{
     align-items: flex-end;
     .bannerunirse__title{
         font-size: 10em;
-        color: #f93e3c;
+        color: $unirsecolor;
         margin-bottom: 0.3em;
         text-shadow: 5px 5px 15px #f93e3c7d;
         font-family: $raleway;
         font-weight: bold;
     }
 }
+
 .backgroundunirse{
     display: flex;
     height: 130vh;
@@ -461,7 +461,7 @@ nav{
             font-family: $oswald;
             letter-spacing: 5px;
             text-transform: uppercase;
-            color: #f93e3c;
+            color: $unirsecolor;
             font-size: 3em;
             font-weight: 500;
             position: relative;
@@ -688,6 +688,7 @@ footer{
             margin: 0;
         }
     }
+
     .bannermiembros__container{
         align-items: center;
         .bannermiembros__title{
@@ -695,6 +696,7 @@ footer{
             margin: 0;
         }
     }
+
     .bannerhistoria__container{
         align-items: center;
         .bannerhistoria__title{
@@ -702,6 +704,7 @@ footer{
             margin: 0;
         }
     }
+
     .bannerunirse__container{
         align-items: center;
         .bannerunirse__title{
@@ -709,6 +712,7 @@ footer{
             margin: 0;
         }
     }
+
     .bannergaleria__container{
 
         .bannergaleria__title{
@@ -716,6 +720,7 @@ footer{
             margin: 0;
         }
     }
+
     .bannerunirse__container{
         align-items: center;
         .bannerunirse__title{
@@ -723,6 +728,7 @@ footer{
             margin: 0;
         }
     }
+
     .containerinicio{
         flex-direction: column;
         .containerinicio__text {
@@ -732,6 +738,7 @@ footer{
             width: 90%;
         }
     }
+
     .containerpelea{
         flex-direction: column;
         .containerpelea__text {
@@ -744,6 +751,7 @@ footer{
             }
         }
     }
+
     .containerestatua{
         flex-direction: column;
         .containerestatua__boximg {
@@ -826,26 +834,31 @@ footer{
             font-size: 7em;
         }
     }
+
     .bannermiembros__container{
         .bannermiembros__title{
             font-size: 6em;
         }
     }
+
     .bannerhistoria__container{
         .bannerhistoria__title{
             font-size: 7em;
         }
     }
+
     .bannergaleria__container{
         .bannergaleria__title{
             font-size: 7em;
         }
     }
+
     .bannerunirse__container{
         .bannerunirse__title{
             font-size: 7em;
         }
     }
+
     .containerinicio{
         flex-direction: column;
         .containerinicio__text {
@@ -855,6 +868,7 @@ footer{
             width: 90%;
         }
     }
+
     .containerpelea{
         flex-direction: column;
         .containerpelea__text {
@@ -867,6 +881,7 @@ footer{
             }
         }
     }
+
     .containerestatua{
         flex-direction: column;
         .containerestatua__boximg {
@@ -917,26 +932,31 @@ footer{
             font-size: 9em;
         }
     }
+
     .bannermiembros__container{
         .bannermiembros__title{
             font-size: 8em;
         }
     }
+
     .bannerhistoria__container{
         .bannerhistoria__title{
             font-size: 9em;
         }
     }
+
     .bannergaleria__container{
         .bannergaleria__title{
             font-size: 9em;
         }
     }
+
     .bannerunirse__container{
         .bannerunirse__title{
             font-size: 9em;
         }
     }
+
     .containerinicio{
         flex-direction: column;
         .containerinicio__text {
@@ -946,6 +966,7 @@ footer{
             width: 90%;
         }
     }
+
     .containerpelea{
         flex-direction: column;
         .containerpelea__text {
@@ -955,6 +976,7 @@ footer{
             width: 100%;
         }
     }
+
     .containerestatua{
         flex-direction: column;
         .containerestatua__boximg {
@@ -964,7 +986,7 @@ footer{
             width: 90%;
         }
     }
-    
+
     /* HISTORIA */
     .historia__container{
         justify-content: center;
@@ -992,6 +1014,7 @@ footer{
             width: 90%;
         }
     }
+
     .containerpelea{
         flex-direction: column;
         .containerpelea__text {
@@ -1001,6 +1024,7 @@ footer{
             width: 100%;
         }
     }
+
     .containerestatua{
         flex-direction: column;
         .containerestatua__boximg {
@@ -1010,6 +1034,7 @@ footer{
             width: 90%;
         }
     }
+
     .footercontent__list {
         margin: 0px 2em;
     }
