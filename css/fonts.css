@@ -1,0 +1,20 @@
+@font-face {
+    font-family: Ninja Naruto;
+    src: url("../fonts/njnarutodiminuto.ttf");
+    font-weight: 300;
+}
+@font-face {
+    font-family: Ninja Naruto;
+    src: url("../fonts/njnarutopequeño.ttf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: Ninja Naruto;
+    src: url("../fonts/njnarutomediano.ttf");
+    font-weight: 700;
+}
+@font-face {
+    font-family: Ninja Naruto;
+    src: url("../fonts/njnarutogrande.ttf");
+    font-weight: 900;
+}
